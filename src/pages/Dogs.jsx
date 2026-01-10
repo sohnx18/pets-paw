@@ -5,7 +5,7 @@ function Dogs() {
     {
       id: 1,
       name: "Pedigree Adult Dry Dog Food",
-      price: "₹679",
+      price: "679",
       image: "https://m.media-amazon.com/images/I/712604bPj2L._SX425_.jpg",
       buyLink: "https://amzn.to/49pu56h"
     },
