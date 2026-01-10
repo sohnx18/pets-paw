@@ -1,53 +1,61 @@
+import { Link } from "react-router-dom"
+
 function Hero() {
   return (
-    <section style={{
-      padding: "80px 60px",
-      maxWidth: "1000px",
-      margin: "0 auto"
-    }}>
-      <h1 style={{
-        fontSize: "48px",
-        lineHeight: "1.2"
-      }}>
-        Everything your pet needs, <br />
-        <span style={{ color: "#2ecc71", display: "inline-flex", alignItems: "center", gap: "8px" }}>
-  chosen with love
-  <span className="paw">🐾</span>
-</span>
-
+    <section
+      style={{
+        padding: "80px 60px",
+        maxWidth: "1000px",
+        margin: "0 auto"
+      }}
+    >
+      <h1
+        style={{
+          fontSize: "48px",
+          lineHeight: "1.2"
+        }}
+      >
+        Everything your pet needs,{" "}
+        <span style={{ color: "#22c55e" }}>
+          chosen with love 🐾
+        </span>
       </h1>
 
-      <p style={{
-        marginTop: "20px",
-        fontSize: "18px",
-        color: "#555",
-        maxWidth: "600px"
-      }}>
-        Discover the best food, toys and care essentials for dogs and cats —
-        all in one place.
+      <p style={{ marginTop: "16px", color: "#555" }}>
+        Discover the best food, toys and care essentials for dogs and cats — all in one place.
       </p>
 
-      <div style={{ marginTop: "30px", display: "flex", gap: "20px" }}>
-        <button style={{
-          padding: "12px 24px",
-          backgroundColor: "#2ecc71",
-          color: "#fff",
-          border: "none",
-          borderRadius: "30px",
-          cursor: "pointer"
-        }}>
-          🐶 Shop Dogs
-        </button>
+      <div style={{ display: "flex", gap: "16px", marginTop: "30px" }}>
+        <Link to="/dogs">
+          <button
+            style={{
+              padding: "12px 24px",
+              backgroundColor: "#22c55e",
+              border: "none",
+              borderRadius: "30px",
+              cursor: "pointer",
+              color: "white",
+              fontWeight: "600"
+            }}
+          >
+            🐶 Shop Dogs
+          </button>
+        </Link>
 
-        <button style={{
-          padding: "12px 24px",
-          backgroundColor: "#fff",
-          border: "1px solid #ccc",
-          borderRadius: "30px",
-          cursor: "pointer"
-        }}>
-          🐱 Shop Cats
-        </button>
+        <Link to="/cats">
+          <button
+            style={{
+              padding: "12px 24px",
+              backgroundColor: "white",
+              border: "1px solid #222",
+              borderRadius: "30px",
+              cursor: "pointer",
+              fontWeight: "600"
+            }}
+          >
+            🐱 Shop Cats
+          </button>
+        </Link>
       </div>
     </section>
   )
