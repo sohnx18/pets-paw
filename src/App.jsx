@@ -9,6 +9,7 @@ import Dogs from "./pages/Dogs"
 import Cats from "./pages/Cats"
 import BestDogFood from "./pages/BestDogFood"
 import BestPuppyFood from "./pages/BestPuppyFood"
+import BestCatFood from "./pages/BestCatFood"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
 
       <Routes>
+        {/* Home */}
         <Route
           path="/"
           element={
@@ -26,12 +28,14 @@ function App() {
           }
         />
 
+        {/* Store pages */}
         <Route path="/dogs" element={<Dogs />} />
         <Route path="/cats" element={<Cats />} />
 
-        {/* SEO money pages */}
+        {/* SEO Money Pages */}
         <Route path="/best-dog-food" element={<BestDogFood />} />
         <Route path="/best-puppy-food" element={<BestPuppyFood />} />
+        <Route path="/best-cat-food" element={<BestCatFood />} />
       </Routes>
 
       <Footer />
