@@ -1,3 +1,7 @@
+  const handleBuy = () => {
+    window.open(buyLink, "_blank", "noopener,noreferrer")
+  }
+
 function ProductCard({ image, name, price, buyLink }) {
   const handleBuy = () => {
     window.open(buyLink, "_blank")
@@ -25,21 +29,26 @@ function ProductCard({ image, name, price, buyLink }) {
 >
 
       <img
-        src={image}
-        alt={name}
-        style={{
-          width: "100%",
-          borderRadius: "12px"
-        }}
-      />
+  src={image}
+  alt={name}
+  style={{
+    width: "100%",
+    borderRadius: "12px",
+    objectFit: "cover"
+  }}
+/>
 
       <h3 style={{ marginTop: "12px", fontSize: "16px" }}>
         {name}
       </h3>
 
-      <p style={{ marginTop: "6px", fontWeight: "600" }}>
-        ₹{price}
-      </p>
+     <p style={{ marginTop: "6px", fontWeight: "600", color: "#27ae60" }}>
+  {price}
+</p>
+
+<p style={{ fontSize: "12px", color: "#777", marginTop: "4px" }}>
+  Free delivery • Amazon verified
+</p>
 
       <button
   onClick={handleBuy}
