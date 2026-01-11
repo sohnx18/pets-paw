@@ -9,9 +9,18 @@ function Navbar() {
       padding: "20px 60px",
       borderBottom: "1px solid #eaeaea"
     }}>
-      
-      <h2>Pets Paw 🐾</h2>
 
+      {/* LOGO */}
+      <Link 
+        to="/" 
+        style={{ textDecoration: "none", color: "black" }}
+      >
+        <h2 style={{ cursor: "pointer" }}>
+          Pets Paw 🐾
+        </h2>
+      </Link>
+
+      {/* MENU */}
       <div style={{ display: "flex", gap: "30px" }}>
         <Link to="/dogs" style={{ textDecoration: "none", color: "#333" }}>
           Dogs
@@ -20,6 +29,7 @@ function Navbar() {
           Cats
         </Link>
       </div>
+
     </nav>
   )
 }
