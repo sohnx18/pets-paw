@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 import Sections from "./components/Sections"
 import Dogs from "./pages/Dogs"
 import Cats from "./pages/Cats"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -20,12 +21,14 @@ function App() {
             </>
           }
         />
-
         <Route path="/dogs" element={<Dogs />} />
         <Route path="/cats" element={<Cats />} />
       </Routes>
+
+      <Footer />
     </>
   )
 }
 
 export default App
+
