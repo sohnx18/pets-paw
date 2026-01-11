@@ -1,4 +1,4 @@
-import ProductCard from "../components/ProductCard"
+import ProductCard from "../components/ProductCard";
 
 function Dogs() {
   const dogProducts = [
@@ -7,30 +7,30 @@ function Dogs() {
       name: "Pedigree Adult Dry Dog Food",
       price: 679,
       image: "https://m.media-amazon.com/images/I/712604bPj2L._SX425_.jpg",
-      buyLink: "https://amzn.to/49pu56h"
+      buyLink: "https://amzn.to/49pu56h",
     },
     {
       id: 2,
       name: "Drools Adult Dry Dog Food",
       price: 722,
       image: "https://m.media-amazon.com/images/I/71o84Bphv-L._SY355_.jpg",
-      buyLink: "https://amzn.to/4jAjgSc"
+      buyLink: "https://amzn.to/4jAjgSc",
     },
     {
       id: 3,
       name: "AmazonBasics Dog Rope Toy",
       price: 179,
       image: "https://m.media-amazon.com/images/I/71kjtvLNy4L._SX425_.jpg",
-      buyLink: "https://amzn.to/4qhzJxa"
+      buyLink: "https://amzn.to/4qhzJxa",
     },
     {
       id: 4,
-      name: "Himalaya Erina-EP Shampoo",
+      name: "Himalaya Erina-EP Dog Shampoo",
       price: 243,
       image: "https://m.media-amazon.com/images/I/51UYPTXkUhL._SY355_.jpg",
-      buyLink: "https://amzn.to/4qfROeV"
-    }
-  ]
+      buyLink: "https://amzn.to/4qfROeV",
+    },
+  ];
 
   return (
     <div style={{ padding: "60px" }}>
@@ -41,7 +41,7 @@ function Dogs() {
           marginTop: "30px",
           display: "flex",
           gap: "20px",
-          flexWrap: "wrap"
+          flexWrap: "wrap",
         }}
       >
         {dogProducts.map((product) => (
@@ -55,7 +55,7 @@ function Dogs() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Dogs
+export default Dogs;
