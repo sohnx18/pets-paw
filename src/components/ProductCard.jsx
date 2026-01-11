@@ -6,7 +6,8 @@ function ProductCard({ name, price, image, buyLink }) {
         border: "1px solid #eee",
         borderRadius: "16px",
         padding: "20px",
-        background: "#fff"
+        background: "#fff",
+        fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
       }}
     >
       <img
@@ -18,17 +19,15 @@ function ProductCard({ name, price, image, buyLink }) {
           objectFit: "contain",
           marginBottom: "12px"
         }}
-        loading="lazy"
       />
 
       <h3 style={{ fontSize: "16px" }}>{name}</h3>
-      <p style={{ fontWeight: "bold", margin: "8px 0" }}>{price}</p>
 
-      <a
-        href={buyLink}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <p style={{ fontWeight: "bold", margin: "8px 0" }}>
+        {price}
+      </p>
+
+      <a href={buyLink} target="_blank" rel="noopener noreferrer">
         <button
           style={{
             background: "#22c55e",
