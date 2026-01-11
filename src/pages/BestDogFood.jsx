@@ -1,6 +1,11 @@
+import { useEffect } from "react"
 import ProductCard from "../components/ProductCard"
 
 function BestDogFood() {
+  useEffect(() => {
+    document.title = "Best Dog Food in India (2026) | Pets Paw"
+  }, [])
+
   const products = [
     {
       id: 1,
@@ -30,8 +35,10 @@ function BestDogFood() {
       <h1>🐶 Best Dog Food in India (2026)</h1>
 
       <p style={{ maxWidth: "700px", marginTop: "10px", color: "#555" }}>
-        We reviewed and compared the best dog food brands in India based on
-        nutrition, ingredients, price and customer reviews.
+        Looking for the best dog food in India? We reviewed top brands like
+        Pedigree, Drools and Royal Canin based on nutrition, ingredients,
+        price and customer reviews to help you choose the healthiest food
+        for your dog.
       </p>
 
       <div
