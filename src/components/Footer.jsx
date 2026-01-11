@@ -2,19 +2,20 @@ function Footer() {
   return (
     <footer
       style={{
-        marginTop: "80px",
         padding: "40px",
         textAlign: "center",
         borderTop: "1px solid #eee",
-        color: "#555",
+        marginTop: "80px",
+        color: "#666",
         fontSize: "14px"
       }}
     >
-      <p>© {new Date().getFullYear()} Pets Paw 🐾</p>
+      <p>
+        As an Amazon Associate I earn from qualifying purchases.
+      </p>
 
-      <p style={{ marginTop: "10px", maxWidth: "600px", marginInline: "auto" }}>
-        As an Amazon Associate, Pets Paw earns from qualifying purchases. 
-        We only recommend products we believe are helpful for pet owners.
+      <p style={{ marginTop: "8px" }}>
+        © {new Date().getFullYear()} Pets Paw. All rights reserved.
       </p>
     </footer>
   )
