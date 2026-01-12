@@ -57,16 +57,16 @@ export const bestPuppyFoods = [
   {
     id: 2,
     name: "Drools Puppy Dry Dog Food 3kg",
-    price: "₹799",
+    price: "₹781",
     image: new URL('/images/drools-puppy.jpg', import.meta.url).href,
-    buyLink: "https://www.amazon.in/s?k=Drools+Puppy+Dry+Dog+Food+3kg"
+    buyLink: "https://amzn.to/3LIIaT3"
   },
   {
     id: 3,
     name: "Royal Canin Puppy Medium 4kg",
     price: "₹2,390",
     image: new URL('/images/royal-canin-puppy.webp', import.meta.url).href,
-    buyLink: "https://www.amazon.in/s?k=Royal+Canin+Puppy+Medium+4kg"
+    buyLink: "https://amzn.to/4jxUD8C"
   }
 ]
 
