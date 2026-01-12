@@ -6,31 +6,29 @@ function BestCatFood() {
     document.title = "Best Cat Food in India (2026) | Pets Paw"
   }, [])
 
- const products = [
-  {
-    id: 1,
-    name: "Whiskas Adult Dry Cat Food – Ocean Fish (3kg)",
-    price: "₹ 990",
-    image: "https://m.media-amazon.com/images/I/81UFCQjgO3L._SL1500_.jpg",
-    buyLink: "https://amzn.to/49x1Tgr"
-  },
-  {
-    id: 2,
-    name: "Drools Adult Dry Cat Food",
-    price: "₹ 799",
-    image: "https://m.media-amazon.com/images/I/71W1xE0hKDL._SL1500_.jpg",
-    buyLink: "https://amzn.to/45Dydgp"
-  },
-  {
-    id: 3,
-    name: "Me-O Adult Dry Cat Food",
-    price: "₹ 645",
-    image: "https://m.media-amazon.com/images/I/71+6h9z-2yL._SL1500_.jpg",
-    buyLink: "https://amzn.to/4sP4yLo"
-  }
-]
-
-
+  const products = [
+    {
+      id: 1,
+      name: "Whiskas Adult Dry Cat Food – Ocean Fish (3kg)",
+      price: "₹ 990",
+      image: "/images/whiskas.jpg",
+      buyLink: "https://amzn.to/49x1Tgr"
+    },
+    {
+      id: 2,
+      name: "Drools Adult Dry Cat Food",
+      price: "₹ 889",
+      image: "/images/drools.jpg",
+      buyLink: "https://amzn.to/3LHQS3Z"
+    },
+    {
+      id: 3,
+      name: "Me-O Adult Dry Cat Food",
+      price: "₹ 1890",
+      image: "/images/meo.jpg",
+      buyLink: "https://amzn.to/3YzO9fW"
+    }
+  ]
 
   return (
     <div style={{ padding: "60px", maxWidth: "1200px", margin: "0 auto" }}>
@@ -59,46 +57,21 @@ function BestCatFood() {
         <h2>How to choose the best cat food in India?</h2>
         <p>
           Cats are obligate carnivores, which means they need high-protein food
-          made from real meat like chicken or fish. The best cat food in India
-          should contain quality animal protein and essential vitamins.
+          made from real meat like chicken or fish.
         </p>
 
         <p>
-          Avoid cat foods that are full of corn, soy, and artificial colors.
-          These ingredients provide little nutrition and may cause stomach issues.
+          Avoid foods filled with corn, soy and artificial colors.
         </p>
 
         <h2>Dry vs Wet cat food</h2>
         <p>
-          Dry food is affordable and easy to store, while wet food helps with
-          hydration. Most Indian cat owners use dry food daily and add wet food
-          as an occasional treat.
+          Dry food is affordable and easy to store. Wet food helps with hydration.
         </p>
 
         <h2>Best cat food brands in India</h2>
         <p>
-          Whiskas, Drools and Me-O are some of the most trusted brands in India.
-          They offer balanced nutrition at different price points.
-        </p>
-
-        <h2>Frequently Asked Questions</h2>
-
-        <h3>Which is the healthiest cat food?</h3>
-        <p>
-          Cat foods with high meat content and no fillers are the healthiest.
-          Whiskas and Drools are good choices for most cats.
-        </p>
-
-        <h3>How much food should I give my cat?</h3>
-        <p>
-          Adult cats usually need 50–70 grams of dry food per day depending on
-          their weight and activity.
-        </p>
-
-        <h3>Is dry food enough for cats?</h3>
-        <p>
-          Yes, high-quality dry food provides complete nutrition. You can add
-          wet food occasionally for variety.
+          Whiskas, Drools and Me-O are trusted brands used by millions of pet owners.
         </p>
       </div>
     </div>
