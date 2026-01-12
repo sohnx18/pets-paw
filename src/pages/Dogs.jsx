@@ -7,14 +7,14 @@ function Dogs() {
       name: "Pedigree Adult Dry Dog Food",
       price: "₹ 679",
       image: "https://m.media-amazon.com/images/I/712604bPj2L._SX425_.jpg",
-      buyLink: "https://amzn.to/49pu56h"
+      buyLink: "https://amzn.to/3LGhoe0"
     },
     {
       id: 2,
       name: "Drools Adult Dry Dog Food",
       price: "₹ 722",
       image: "https://m.media-amazon.com/images/I/71o84Bphv-L._SY355_.jpg",
-      buyLink: "https://amzn.to/4jAjgSc"
+      buyLink: "https://amzn.to/3YT6S6p"
     },
     {
       id: 3,

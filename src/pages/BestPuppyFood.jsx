@@ -6,21 +6,21 @@ function BestPuppyFood() {
       id: 1,
       name: "Pedigree Puppy Chicken & Milk 3kg",
       price: "₹729",
-      image: "https://m.media-amazon.com/images/I/71bT2f8oYUL._SX425_.jpg",
+      image: new URL('/images/pedigree-puppy.svg', import.meta.url).href,
       buyLink: "https://amzn.to/4jAjgSc"
     },
     {
       id: 2,
       name: "Drools Puppy Dry Dog Food 3kg",
       price: "₹799",
-      image: "https://m.media-amazon.com/images/I/71o84Bphv-L._SY355_.jpg",
+      image: new URL('/images/drools-puppy.jpg', import.meta.url).href,
       buyLink: "https://amzn.to/49pu56h"
     },
     {
       id: 3,
       name: "Royal Canin Puppy Medium 4kg",
       price: "₹2,390",
-      image: "https://m.media-amazon.com/images/I/71bq+vVZ0mL._SX425_.jpg",
+      image: new URL('/images/royal-canin-puppy.svg', import.meta.url).href,
       buyLink: "https://amzn.to/4qhzJxa"
     }
   ]

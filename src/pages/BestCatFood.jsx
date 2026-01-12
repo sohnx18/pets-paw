@@ -11,21 +11,21 @@ function BestCatFood() {
       id: 1,
       name: "Whiskas Adult Dry Cat Food – Ocean Fish (3kg)",
       price: "₹ 990",
-      image: "/images/whiskas.jpg",
+      image: new URL('/images/whiskas.jpg', import.meta.url).href,
       buyLink: "https://amzn.to/49x1Tgr"
     },
     {
       id: 2,
       name: "Drools Adult Dry Cat Food",
       price: "₹ 889",
-      image: "/images/drools.jpg",
+      image: new URL('/images/drools.jpg', import.meta.url).href,
       buyLink: "https://amzn.to/3LHQS3Z"
     },
     {
       id: 3,
       name: "Me-O Adult Dry Cat Food",
       price: "₹ 1890",
-      image: "/images/meo.jpg",
+      image: new URL('/images/meo.jpg', import.meta.url).href,
       buyLink: "https://amzn.to/3YzO9fW"
     }
   ]
