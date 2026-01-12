@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pets-paw-store.vercel.app/sitemap.xml

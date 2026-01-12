@@ -11,10 +11,15 @@ function ProductCard({ name, price, image, buyLink }) {
       <img
         src={image}
         alt={name}
+        width={400}
+        height={200}
+        decoding="async"
         style={{
           width: "100%",
           height: "200px",
-          objectFit: "contain"
+          objectFit: "contain",
+          minHeight: "120px",
+          background: "#fff"
         }}
         loading="lazy"
         referrerPolicy="no-referrer"
@@ -35,7 +40,7 @@ function ProductCard({ name, price, image, buyLink }) {
       <a
         href={buyLink}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         style={{
           display: "block",
           marginTop: "12px",

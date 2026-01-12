@@ -36,6 +36,9 @@ function App() {
         <Route path="/best-dog-food" element={<BestDogFood />} />
         <Route path="/best-puppy-food" element={<BestPuppyFood />} />
         <Route path="/best-cat-food" element={<BestCatFood />} />
+
+        {/* Fallback */}
+        <Route path="*" element={<div style={{ padding: 60, textAlign: 'center' }}><h1>Page not found</h1><p><a href="/">Return home</a></p></div>} />
       </Routes>
 
       <Footer />
