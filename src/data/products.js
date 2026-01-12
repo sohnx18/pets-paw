@@ -52,7 +52,7 @@ export const bestPuppyFoods = [
     name: "Pedigree Puppy Chicken & Milk 3kg",
     price: "₹729",
     image: new URL('/images/pedigree-puppy.jpg', import.meta.url).href,
-    buyLink: "https://www.amazon.in/s?k=Pedigree+Puppy+Chicken+Milk+3kg"
+    buyLink: "https://www.amazon.in/Pedigree-Adult-Food-Chicken-Vegetables/dp/B00LHS8I3A"
   },
   {
     id: 2,
