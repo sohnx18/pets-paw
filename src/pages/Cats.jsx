@@ -1,8 +1,7 @@
 import ProductCard from "../components/ProductCard";
+import { cats } from "../data/products";
 
 function Cats() {
-  import { cats } from "../data/products"
-
   const catProducts = cats;
 
   return (

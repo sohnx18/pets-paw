@@ -1,8 +1,7 @@
 import ProductCard from "../components/ProductCard";
+import { dogs } from "../data/products";
 
 function Dogs() {
-  import { dogs } from "../data/products"
-
   const dogProducts = dogs;
 
   return (

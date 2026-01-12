@@ -1,12 +1,11 @@
 import { useEffect } from "react"
 import ProductCard from "../components/ProductCard"
+import { bestCatFoods } from "../data/products"
 
 function BestCatFood() {
   useEffect(() => {
     document.title = "Best Cat Food in India (2026) | Pets Paw"
   }, [])
-
-  import { bestCatFoods } from "../data/products"
 
   const products = bestCatFoods
 
