@@ -6,29 +6,31 @@ function BestCatFood() {
     document.title = "Best Cat Food in India (2026) | Pets Paw"
   }, [])
 
-  const products = [
-    {
-      id: 1,
-      name: "Whiskas Adult Dry Cat Food – Ocean Fish (3kg)",
-      price: "₹ 990",
-      image: "https://images-na.ssl-images-amazon.com/images/I/81UFCQjgO3L.jpg",
-      buyLink: "https://amzn.to/49x1Tgr"
-    },
-    {
-      id: 2,
-      name: "Drools Adult Dry Cat Food",
-      price: "₹ 799",
-      image: "https://images-na.ssl-images-amazon.com/images/I/71W1xE0hKDL.jpg",
-      buyLink: "https://amzn.to/45Dydgp"
-    },
-    {
-      id: 3,
-      name: "Me-O Adult Dry Cat Food",
-      price: "₹ 645",
-      image: "https://images-na.ssl-images-amazon.com/images/I/71%2B6h9z-2yL.jpg",
-      buyLink: "https://amzn.to/4sP4yLo"
-    }
-  ]
+ const products = [
+  {
+    id: 1,
+    name: "Whiskas Adult Dry Cat Food – Ocean Fish (3kg)",
+    price: "₹ 990",
+    image: "https://m.media-amazon.com/images/I/81UFCQjgO3L._SL1500_.jpg",
+    buyLink: "https://amzn.to/49x1Tgr"
+  },
+  {
+    id: 2,
+    name: "Drools Adult Dry Cat Food",
+    price: "₹ 799",
+    image: "https://m.media-amazon.com/images/I/71W1xE0hKDL._SL1500_.jpg",
+    buyLink: "https://amzn.to/45Dydgp"
+  },
+  {
+    id: 3,
+    name: "Me-O Adult Dry Cat Food",
+    price: "₹ 645",
+    image: "https://m.media-amazon.com/images/I/71+6h9z-2yL._SL1500_.jpg",
+    buyLink: "https://amzn.to/4sP4yLo"
+  }
+]
+
+
 
   return (
     <div style={{ padding: "60px", maxWidth: "1200px", margin: "0 auto" }}>
