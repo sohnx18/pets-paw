@@ -1,29 +1,8 @@
 import ProductCard from "../components/ProductCard"
+import { bestPuppyFoods } from "../data/products"
 
 function BestPuppyFood() {
-  const puppyFoods = [
-    {
-      id: 1,
-      name: "Pedigree Puppy Chicken & Milk 3kg",
-      price: "₹729",
-      image: new URL('/images/pedigree-puppy.jpg', import.meta.url).href,
-      buyLink: "https://www.amazon.in/s?k=Pedigree+Puppy+Chicken+Milk+3kg"
-    },
-    {
-      id: 2,
-      name: "Drools Puppy Dry Dog Food 3kg",
-      price: "₹799",
-      image: new URL('/images/drools-puppy.jpg', import.meta.url).href,
-      buyLink: "https://www.amazon.in/s?k=Drools+Puppy+Dry+Dog+Food+3kg"
-    },
-    {
-      id: 3,
-      name: "Royal Canin Puppy Medium 4kg",
-      price: "₹2,390",
-      image: new URL('/images/royal-canin-puppy.webp', import.meta.url).href,
-      buyLink: "https://www.amazon.in/s?k=Royal+Canin+Puppy+Medium+4kg"
-    }
-  ]
+  const puppyFoods = bestPuppyFoods
 
   return (
     <div style={{ padding: "60px", maxWidth: "1200px", margin: "0 auto" }}>

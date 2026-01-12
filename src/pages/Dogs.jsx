@@ -1,36 +1,9 @@
 import ProductCard from "../components/ProductCard";
 
 function Dogs() {
-  const dogProducts = [
-    {
-      id: 1,
-      name: "Pedigree Adult Dry Dog Food",
-      price: "₹ 679",
-      image: "https://m.media-amazon.com/images/I/712604bPj2L._SX425_.jpg",
-      buyLink: "https://amzn.to/3LGhoe0"
-    },
-    {
-      id: 2,
-      name: "Drools Adult Dry Dog Food",
-      price: "₹ 722",
-      image: "https://m.media-amazon.com/images/I/71o84Bphv-L._SY355_.jpg",
-      buyLink: "https://amzn.to/3YT6S6p"
-    },
-    {
-      id: 3,
-      name: "AmazonBasics Dog Rope Toy",
-      price: "₹ 179",
-      image: "https://m.media-amazon.com/images/I/71kjtvLNy4L._SX425_.jpg",
-      buyLink: "https://amzn.to/4qhzJxa"
-    },
-    {
-      id: 4,
-      name: "Himalaya Erina-EP Shampoo",
-      price: "₹ 243",
-      image: "https://m.media-amazon.com/images/I/51UYPTXkUhL._SY355_.jpg",
-      buyLink: "https://amzn.to/4qfROeV"
-    }
-  ];
+  import { dogs } from "../data/products"
+
+  const dogProducts = dogs;
 
   return (
     <div style={{ padding: "60px" }}>

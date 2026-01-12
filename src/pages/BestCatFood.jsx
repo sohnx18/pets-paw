@@ -6,29 +6,9 @@ function BestCatFood() {
     document.title = "Best Cat Food in India (2026) | Pets Paw"
   }, [])
 
-  const products = [
-    {
-      id: 1,
-      name: "Whiskas Adult Dry Cat Food – Ocean Fish (3kg)",
-      price: "₹ 990",
-      image: new URL('/images/whiskas.jpg', import.meta.url).href,
-      buyLink: "https://amzn.to/49x1Tgr"
-    },
-    {
-      id: 2,
-      name: "Drools Adult Dry Cat Food",
-      price: "₹ 889",
-      image: new URL('/images/drools.jpg', import.meta.url).href,
-      buyLink: "https://amzn.to/3LHQS3Z"
-    },
-    {
-      id: 3,
-      name: "Me-O Adult Dry Cat Food",
-      price: "₹ 1890",
-      image: new URL('/images/meo.jpg', import.meta.url).href,
-      buyLink: "https://amzn.to/3YzO9fW"
-    }
-  ]
+  import { bestCatFoods } from "../data/products"
+
+  const products = bestCatFoods
 
   return (
     <div style={{ padding: "60px", maxWidth: "1200px", margin: "0 auto" }}>
