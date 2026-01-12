@@ -18,13 +18,13 @@ function BestCatFood() {
       id: 2,
       name: "Drools Adult Dry Cat Food",
       price: "₹ 889",
-      image: "/images/drools-cat.jpg",
+      image: "/images/drools.jpg",
       buyLink: "https://amzn.to/3LHQS3Z"
     },
     {
       id: 3,
       name: "Me-O Adult Dry Cat Food",
-      price: "₹ 645",
+      price: "₹ 1890",
       image: "/images/meo.jpg",
       buyLink: "https://amzn.to/3YzO9fW"
     }
@@ -33,12 +33,6 @@ function BestCatFood() {
   return (
     <div style={{ padding: "60px", maxWidth: "1200px", margin: "0 auto" }}>
       <h1>🐱 Best Cat Food in India (2026)</h1>
-
-      <p style={{ maxWidth: "700px", marginTop: "10px", color: "#555" }}>
-        We reviewed Whiskas, Drools and Me-O based on nutrition, ingredients,
-        price and real customer reviews to help you choose the healthiest
-        cat food in India.
-      </p>
 
       <div style={{ display: "flex", gap: "24px", marginTop: "40px", flexWrap: "wrap" }}>
         {products.map((p) => (
@@ -52,8 +46,8 @@ function BestCatFood() {
         ))}
       </div>
 
-      <p style={{ marginTop: "40px", fontSize: "14px", color: "#777" }}>
-        Pets Paw is supported by readers. As an Amazon Associate, we earn from qualifying purchases.
+      <p style={{ marginTop: "50px", fontSize: "14px", color: "#777" }}>
+        Pets Paw is supported by readers. As an Amazon Associate we earn from qualifying purchases.
       </p>
     </div>
   )
