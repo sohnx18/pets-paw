@@ -32,23 +32,55 @@ function BestDogFood() {
 
   return (
     <div style={{ padding: "60px", maxWidth: "1200px", margin: "0 auto" }}>
+
       <h1>🐶 Best Dog Food in India (2026)</h1>
 
       <p style={{ maxWidth: "700px", marginTop: "10px", color: "#555" }}>
-        Looking for the best dog food in India? We reviewed top brands like
-        Pedigree, Drools and Royal Canin based on nutrition, ingredients,
-        price and customer reviews to help you choose the healthiest food
-        for your dog.
+        Looking for the best dog food in India? We reviewed Pedigree, Drools and Royal Canin
+        based on nutrition, ingredients, price and thousands of customer reviews to help
+        you choose the healthiest food for your dog.
       </p>
 
-      <div
-        style={{
-          display: "flex",
-          gap: "24px",
-          marginTop: "40px",
-          flexWrap: "wrap"
-        }}
-      >
+      {/* Comparison Table */}
+      <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "40px" }}>
+        <thead>
+          <tr style={{ background: "#f5f5f5" }}>
+            <th style={{ padding: "12px", border: "1px solid #ddd" }}>Brand</th>
+            <th style={{ padding: "12px", border: "1px solid #ddd" }}>Best For</th>
+            <th style={{ padding: "12px", border: "1px solid #ddd" }}>Price</th>
+            <th style={{ padding: "12px", border: "1px solid #ddd" }}>Buy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style={{ padding: "10px", border: "1px solid #ddd" }}>Pedigree</td>
+            <td style={{ padding: "10px", border: "1px solid #ddd" }}>Daily nutrition</td>
+            <td style={{ padding: "10px", border: "1px solid #ddd" }}>₹679</td>
+            <td style={{ padding: "10px", border: "1px solid #ddd" }}>
+              <a href="https://amzn.to/yourlink1" target="_blank">Check price</a>
+            </td>
+          </tr>
+          <tr>
+            <td style={{ padding: "10px", border: "1px solid #ddd" }}>Drools</td>
+            <td style={{ padding: "10px", border: "1px solid #ddd" }}>High protein</td>
+            <td style={{ padding: "10px", border: "1px solid #ddd" }}>₹722</td>
+            <td style={{ padding: "10px", border: "1px solid #ddd" }}>
+              <a href="https://amzn.to/3YT6S6p" target="_blank">Check price</a>
+            </td>
+          </tr>
+          <tr>
+            <td style={{ padding: "10px", border: "1px solid #ddd" }}>Royal Canin</td>
+            <td style={{ padding: "10px", border: "1px solid #ddd" }}>Premium care</td>
+            <td style={{ padding: "10px", border: "1px solid #ddd" }}>₹3,776</td>
+            <td style={{ padding: "10px", border: "1px solid #ddd" }}>
+              <a href="https://amzn.to/4bz3W66" target="_blank">Check price</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      {/* Product Cards */}
+      <div style={{ display: "flex", gap: "24px", marginTop: "40px", flexWrap: "wrap" }}>
         {products.map((p) => (
           <ProductCard
             key={p.id}
@@ -62,52 +94,40 @@ function BestDogFood() {
 
       {/* SEO Content */}
       <div style={{ marginTop: "60px", maxWidth: "800px", lineHeight: "1.7" }}>
-        <h2>How to choose the best dog food in India?</h2>
+        <h2>Why these are the best dog foods in India</h2>
         <p>
-          Choosing the right dog food is one of the most important decisions
-          for your pet’s health. Indian dogs need food that is high in protein,
-          easy to digest, and suitable for our climate.
+          We selected these brands based on ingredient quality, protein content,
+          digestibility and thousands of verified Amazon reviews from Indian pet owners.
         </p>
 
         <p>
-          Always choose dog food that has chicken, eggs or fish as the first
-          ingredient. Avoid foods full of corn, wheat and soy, as they provide
-          low nutrition and may cause allergies.
-        </p>
-
-        <h2>Why dry dog food is best for Indian dogs</h2>
-        <p>
-          Dry dog food (kibble) is affordable, easy to store, and helps keep
-          teeth clean. Brands like Pedigree, Drools and Royal Canin are specially
-          made for Indian dogs.
-        </p>
-
-        <h2>Royal Canin vs Pedigree vs Drools</h2>
-        <p>
-          Royal Canin is premium and best for puppies and sensitive dogs.
-          Pedigree and Drools are budget-friendly and perfect for daily feeding.
+          Low-quality dog food can cause allergies, stomach issues and weak immunity.
+          These brands provide balanced nutrition for Indian dogs.
         </p>
 
         <h2>Frequently Asked Questions</h2>
 
-        <h3>Which is the best dog food brand in India?</h3>
+        <h3>Which is the best dog food in India?</h3>
         <p>
-          Royal Canin, Pedigree and Drools are among the most trusted dog food
-          brands in India.
+          Pedigree and Drools are best for daily feeding. Royal Canin is ideal for puppies
+          and dogs with special health needs.
         </p>
 
         <h3>Is dry food healthy for dogs?</h3>
         <p>
-          Yes. High-quality dry food provides complete nutrition when fed in
-          proper quantity.
+          Yes. High-quality dry food provides complete nutrition and helps maintain dental health.
         </p>
 
-        <h3>How much food should I give my dog?</h3>
+        <h3>How much dog food should I give?</h3>
         <p>
-          Adult dogs usually need 2–3 cups of dry food daily depending on size
-          and activity level.
+          Most adult dogs need 2–3 cups of dry food daily depending on size and activity.
+        </p>
+
+        <p style={{ marginTop: "40px", fontSize: "14px", color: "#777" }}>
+          Pets Paw is supported by readers. As an Amazon Associate, we earn from qualifying purchases.
         </p>
       </div>
+
     </div>
   )
 }
