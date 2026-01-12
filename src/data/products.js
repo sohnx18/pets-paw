@@ -27,7 +27,7 @@ export const bestDogFoods = [
     id: 1,
     name: "Pedigree Adult Dry Dog Food (3kg)",
     price: "₹ 679",
-    image: "https://m.media-amazon.com/images/I/81R2m9+uT2L._SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/712604bPj2L._SX425_.jpg",
     buyLink: "https://amzn.to/3LGhoe0"
   },
   {
@@ -51,8 +51,8 @@ export const bestPuppyFoods = [
     id: 1,
     name: "Pedigree Puppy Chicken & Milk 3kg",
     price: "₹729",
-    image: "https://m.media-amazon.com/images/I/81R2m9+uT2L._SL1500_.jpg",
-    buyLink: "https://www.amazon.in/Pedigree-Adult-Food-Chicken-Vegetables/dp/B00LHS8I3A"
+    image: "https://m.media-amazon.com/images/I/712604bPj2L._SX425_.jpg",
+    buyLink: "https://amzn.to/3LGhoe0"
   },
   {
     id: 2,
