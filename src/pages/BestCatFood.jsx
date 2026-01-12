@@ -25,7 +25,7 @@ function BestCatFood() {
       id: 3,
       name: "Me-O Adult Dry Cat Food",
       price: "₹ 1890",
-      image: "https://images-na.ssl-images-amazon.com/images/I/71+6h9z-2yL.jpg",
+      image: "https://m.media-amazon.com/images/I/71+6h9z-2yL._SL1500_.jpg",
       buyLink: "https://amzn.to/3YzO9fW"
     }
   ]
