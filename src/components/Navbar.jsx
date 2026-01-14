@@ -1,26 +1,31 @@
-import { Link } from "react-router-dom"
+
+
 
 function Navbar() {
   return (
-    <nav style={{
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-      padding: "20px 60px",
-      borderBottom: "1px solid #eaeaea"
-    }}>
-
-      {/* LOGO */}
-      <Link 
-        to="/" 
-        style={{ textDecoration: "none", color: "black" }}
+    <nav
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "20px 60px",
+        borderBottom: "1px solid #eaeaea",
+      }}
+    >
+      {/* Logo / Site Title */}
+      <Link
+        to="/"
+        style={{
+          textDecoration: "none",
+          color: "#000",
+          fontSize: "22px",
+          fontWeight: "bold",
+        }}
       >
-        <h2 style={{ cursor: "pointer" }}>
-          Pets Paw 🐾
-        </h2>
+        Pets Paw 🐾
       </Link>
 
-      {/* MENU */}
+      {/* Menu */}
       <div style={{ display: "flex", gap: "30px" }}>
         <Link to="/dogs" style={{ textDecoration: "none", color: "#333" }}>
           Dogs
@@ -29,7 +34,6 @@ function Navbar() {
           Cats
         </Link>
       </div>
-
     </nav>
   )
 }
