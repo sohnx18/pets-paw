@@ -51,6 +51,7 @@ function BestCatFood() {
               price={p.price}
               image={p.image}
               buyLink={p.buyLink}
+              benefits={p.benefits || []}
             />
           ))}
         </div>

@@ -28,11 +28,22 @@ const ProductImage = styled(LazyImage)`
 const ProductTitle = styled.h3`
   margin-top: 12px;
   font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+`
+
+const ProductBenefits = styled.ul`
+  margin-top: 8px;
+  padding-left: 16px;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.4;
 `
 
 const ProductPrice = styled.p`
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 8px;
+  color: #374151;
 `
 
 const BuyButton = styled.a`
@@ -112,6 +123,15 @@ function ProductCard({ name, price, image, buyLink }) {
       />
 
       <ProductTitle>{name}</ProductTitle>
+
+      {benefits.length > 0 && (
+        <ProductBenefits>
+          {benefits.map((benefit, index) => (
+            <li key={index}>{benefit}</li>
+          ))}
+        </ProductBenefits>
+      )}
+
       <ProductPrice>{priceLabel}</ProductPrice>
 
       <BuyButton
@@ -119,7 +139,7 @@ function ProductCard({ name, price, image, buyLink }) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Buy on Amazon
+        Check on Amazon
       </BuyButton>
     </Card>
   )
