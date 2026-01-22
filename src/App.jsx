@@ -19,7 +19,6 @@ function App() {
       <HelmetProvider>
         <Router>
           <Navbar />
-          <h1>App is rendering</h1>
           <Suspense fallback={<div style={{ padding: '60px', fontSize: '24px', color: 'red' }}>Loading...</div>}>
             <Routes>
               <Route path="/" element={<BestDogFood />} />
