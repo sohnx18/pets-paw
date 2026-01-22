@@ -16,7 +16,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 function App() {
   return (
     <ErrorBoundary>
-      {/* <HelmetProvider> */}
+      <HelmetProvider>
         <Router>
           <Navbar />
           <h1>App is rendering</h1>
@@ -33,7 +33,7 @@ function App() {
           </Suspense>
           <Footer />
         </Router>
-      {/* </HelmetProvider> */}
+      </HelmetProvider>
     </ErrorBoundary>
   );
 }
