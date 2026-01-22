@@ -58,6 +58,7 @@ function BestPuppyFood() {
               name={product.name}
               price={product.price}
               buyLink={product.buyLink}
+              benefits={product.benefits || []}
             />
           ))}
         </div>

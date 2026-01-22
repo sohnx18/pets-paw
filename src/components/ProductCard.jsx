@@ -72,7 +72,7 @@ const AffiliateDisclosure = styled.small`
   line-height: 1.3;
 `
 
-function ProductCard({ name, price, image, buyLink }) {
+function ProductCard({ name, price, image, buyLink, benefits = [] }) {
   // Function to categorize price into labels
   const getPriceLabel = (priceStr) => {
     const num = parseFloat(priceStr.replace(/[^\d.]/g, ''));
