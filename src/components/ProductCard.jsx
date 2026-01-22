@@ -62,6 +62,16 @@ const AffiliateDisclosure = styled.small`
 `
 
 function ProductCard({ name, price, image, buyLink }) {
+  // Function to categorize price into labels
+  const getPriceLabel = (priceStr) => {
+    const num = parseFloat(priceStr.replace(/[^\d.]/g, ''));
+    if (num < 1000) return "Budget";
+    if (num <= 2500) return "Mid-range";
+    return "Premium";
+  };
+
+  const priceLabel = getPriceLabel(price);
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -69,8 +79,6 @@ function ProductCard({ name, price, image, buyLink }) {
     "image": image,
     "offers": {
       "@type": "Offer",
-      "price": price.replace(/[^\d.]/g, ''),
-      "priceCurrency": "INR",
       "availability": "https://schema.org/InStock",
       "url": buyLink,
       "seller": {
@@ -104,7 +112,7 @@ function ProductCard({ name, price, image, buyLink }) {
       />
 
       <ProductTitle>{name}</ProductTitle>
-      <ProductPrice>{price}</ProductPrice>
+      <ProductPrice>{priceLabel}</ProductPrice>
 
       <BuyButton
         href={buyLink}
