@@ -1,62 +1,119 @@
+import styled from 'styled-components'
+import { motion } from 'framer-motion'
+import LazyImage from './LazyImage'
+
+const Card = styled(motion.div)`
+  width: 260px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+`
+
+const ProductImage = styled(LazyImage)`
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  min-height: 120px;
+  background: #fff;
+`
+
+const ProductTitle = styled.h3`
+  margin-top: 12px;
+  font-size: 16px;
+`
+
+const ProductPrice = styled.p`
+  font-weight: bold;
+  margin-top: 8px;
+`
+
+const BuyButton = styled.a`
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  padding: 10px;
+  background: #ff9900;
+  color: #000;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background: #e68a00;
+  }
+`
+
+const AffiliateDisclosure = styled.small`
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  color: #666;
+  text-align: center;
+  line-height: 1.3;
+`
+
 function ProductCard({ name, price, image, buyLink }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": name,
+    "image": image,
+    "offers": {
+      "@type": "Offer",
+      "price": price.replace(/[^\d.]/g, ''),
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": buyLink,
+      "seller": {
+        "@type": "Organization",
+        "name": "Amazon"
+      }
+    }
+  }
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+  }
+
   return (
-    <div style={{
-      width: "260px",
-      border: "1px solid #eee",
-      borderRadius: "12px",
-      padding: "16px",
-      background: "#fff"
-    }}>
-      
-      <img
+    <Card
+      variants={cardVariants}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.3 }}
+    >
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+
+      <ProductImage
         src={image}
         alt={name}
         width={400}
         height={200}
-        decoding="async"
-        style={{
-          width: "100%",
-          height: "200px",
-          objectFit: "contain",
-          minHeight: "120px",
-          background: "#fff"
-        }}
-        loading="lazy"
-        referrerPolicy="no-referrer"
-        onError={(e) => {
-          e.target.onerror = null
-          e.target.src = 'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22400%22%20height%3D%22200%22%3E%3Crect%20fill%3D%22%23f3f3f3%22%20width%3D%22100%25%22%20height%3D%22100%25%22/%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%23777%22%20font-family%3D%22Arial%2C%20Helvetica%2C%20sans-serif%22%20font-size%3D%2220%22%3EImage%20not%20available%3C/text%3E%3C/svg%3E'
-        }}
       />
 
-      <h3 style={{ marginTop: "12px", fontSize: "16px" }}>
-        {name}
-      </h3>
+      <ProductTitle>{name}</ProductTitle>
+      <ProductPrice>{price}</ProductPrice>
 
-      <p style={{ fontWeight: "bold", marginTop: "8px" }}>
-        {price}
-      </p>
-
-      <a
+      <BuyButton
         href={buyLink}
         target="_blank"
         rel="noopener noreferrer"
-        style={{
-          display: "block",
-          marginTop: "12px",
-          textAlign: "center",
-          padding: "10px",
-          background: "#ff9900",
-          color: "#000",
-          borderRadius: "8px",
-          fontWeight: "bold",
-          textDecoration: "none"
-        }}
       >
         Buy on Amazon
-      </a>
-
-    </div>
+      </BuyButton>
+    </Card>
   )
 }
 

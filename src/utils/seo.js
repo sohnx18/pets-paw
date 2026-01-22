@@ -1,37 +1,25 @@
+import { Helmet } from 'react-helmet'
+
+export function SEOHead({ title, description, image, canonical, schema }) {
+  return (
+    <Helmet>
+      {title && <title>{title}</title>}
+      {description && <meta name="description" content={description} />}
+      {title && <meta property="og:title" content={title} />}
+      {description && <meta property="og:description" content={description} />}
+      {image && <meta property="og:image" content={image} />}
+      {canonical && <link rel="canonical" href={canonical} />}
+      {schema && (
+        <script type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      )}
+    </Helmet>
+  )
+}
+
+// Legacy function for backward compatibility - will be removed later
 export function setTitleAndMeta({ title, description, image, canonical }) {
-  if (title) document.title = title
-
-  const setMeta = (name, content, attr = 'name') => {
-    if (!content) return
-    let el = document.querySelector(`meta[${attr}="${name}"]`)
-    if (!el) {
-      el = document.createElement('meta')
-      el.setAttribute(attr, name)
-      document.head.appendChild(el)
-    }
-    el.setAttribute('content', content)
-  }
-
-  setMeta('description', description, 'name')
-  setMeta('og:title', title, 'property')
-  setMeta('og:description', description, 'property')
-  if (image) {
-    let og = document.querySelector('meta[property="og:image"]')
-    if (!og) {
-      og = document.createElement('meta')
-      og.setAttribute('property', 'og:image')
-      document.head.appendChild(og)
-    }
-    og.setAttribute('content', image)
-  }
-
-  if (canonical) {
-    let link = document.querySelector('link[rel="canonical"]')
-    if (!link) {
-      link = document.createElement('link')
-      link.setAttribute('rel', 'canonical')
-      document.head.appendChild(link)
-    }
-    link.setAttribute('href', canonical)
-  }
+  console.warn('setTitleAndMeta is deprecated. Use SEOHead component instead.')
+  // This function is now a no-op since Helmet handles meta tags
 }
