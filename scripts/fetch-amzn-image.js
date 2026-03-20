@@ -1,6 +1,7 @@
 // Usage: node scripts/fetch-amzn-image.js <productUrl> <outputPath>
-const fs = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
+import puppeteer from 'puppeteer'
 const url = process.argv[2]
 const out = process.argv[3]
 if (!url || !out) {
@@ -9,7 +10,6 @@ if (!url || !out) {
 }
 ;(async () => {
   try {
-    const puppeteer = require('puppeteer')
     const browser = await puppeteer.launch({ args: ['--no-sandbox','--disable-setuid-sandbox'] })
     const page = await browser.newPage()
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64)')
@@ -51,14 +51,6 @@ if (!url || !out) {
 
     if (!imgUrl) throw new Error('Could not find image URL on the page')
     console.log('Found image URL:', imgUrl)
-
-    const res = await page.goto(imgUrl)
-    if (!res || !res.ok()) throw new Error('Failed to download image')
-    const buffer = await res.buffer()
-    const outDir = path.dirname(out)
-    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true })
-    fs.writeFileSync(out, buffer)
-    console.log('Saved image to', out)
 
     await browser.close()
   } catch (err) {
