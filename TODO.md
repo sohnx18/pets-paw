@@ -1,8 +1,1 @@
-# Fix prices and images - disable products.generated.js override
-
-- [x] 1. Create this TODO.md
-- [x] 2. Edit src/data/products.js to remove generated.js override
-- [x] 3. Edit src/data/products.base.js to fix grooming and collar images
-- [x] 4. Validate with node require check
-- [ ] 5. Git add/commit/push
-- [ ] 6. Complete task
+- [x] Step 1: Delete src/data/products.generated.js ✓&#10;- [x] Step 2: Validate products.base.js syntax ✓ (output: valid)&#10;&#10;## Remaining:&#10;- [ ] Step 3: Git add/commit/push&#10;- [ ] Step 4: Complete
