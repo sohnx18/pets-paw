@@ -1,12 +1,8 @@
-# Product Fixes TODO
+# Fix prices and images - disable products.generated.js override
 
-- [ ] Create TODO.md
-- [ ] Fix all placeholder buyLinks in all arrays
-- [ ] Standardize cat/kitten images to /images/products/cat-food.jpg
-- [ ] Standardize dog/puppy images to /images/products/dog-food.jpg
-- [ ] Fix all prices to ₹599/₹999/₹1499 mappings
-- [ ] Clean syntax (commas, \n)
-- [ ] Validate JS with node require
-- [ ] git add/commit/push if valid
-
-
+- [x] 1. Create this TODO.md
+- [x] 2. Edit src/data/products.js to remove generated.js override
+- [x] 3. Edit src/data/products.base.js to fix grooming and collar images
+- [x] 4. Validate with node require check
+- [ ] 5. Git add/commit/push
+- [ ] 6. Complete task

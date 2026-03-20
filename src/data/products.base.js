@@ -143,7 +143,7 @@ export const dogGrooming = [
     id: 1,
     name: "Himalaya Erina-EP Shampoo",
     price: "₹999",
-    image: "/images/products/cleaning.jpg",
+    image: "/images/products/grooming.jpg",
     buyLink: "https://www.amazon.in/s?k=Himalaya+Erina+EP+Shampoo&tag=petspawstore-21",
     benefits: ["Natural ingredients", "Gentle on skin", "Removes dirt effectively"]
   },
@@ -151,7 +151,7 @@ export const dogGrooming = [
     id: 2,
     name: "AmazonBasics Dog Brush",
     price: "₹399",
-    image: "/images/products/cleaning.jpg",
+    image: "/images/products/grooming.jpg",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Dog+Brush&tag=petspawstore-21",
     benefits: ["Removes loose fur", "Massages skin", "Easy to use"]
   }
@@ -181,7 +181,7 @@ export const dogLeashesCollars = [
     id: 1,
     name: "AmazonBasics Dog Collar",
     price: "₹599",
-    image: "/images/products/amazonbasics-dog-collar.webp",
+    image: "/images/products/collar.jpg",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Dog+Collar&tag=petspawstore-21",
     benefits: ["Adjustable fit", "Durable nylon", "Comfortable design"]
   },
@@ -189,7 +189,7 @@ export const dogLeashesCollars = [
     id: 2,
     name: "PetSafe Easy Walk Harness",
     price: "₹1499",
-    image: "/images/products/amazonbasics-dog-collar.webp",
+    image: "/images/products/collar.jpg",
     buyLink: "https://www.amazon.in/s?k=PetSafe+Easy+Walk+Harness&tag=petspawstore-21",
     benefits: ["Reduces pulling", "No-choke design", "Easy to put on"]
   }
