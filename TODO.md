@@ -14,6 +14,6 @@
    - Confirm Dentastix and Omega images (already correct)
 3. [✅] Fix UTF-8 encoding
 4. [✅] Validate
-5. [ ] Git: git add . && git commit -m "Use real product images and fix UTF-8 encoding" && git push
-6. [ ] Mark complete and attempt_completion
+5. [✅] Git committed and pushed
+6. [✅] Task complete
 
