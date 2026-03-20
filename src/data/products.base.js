@@ -249,8 +249,7 @@ export const catFoodKitten = [
     name: "Royal Canin Kitten Food",
     price: "₹1299",
     image: "/images/products/cat-food.jpg",
-    buyLink: "https://www.amazon.in/s?k=Royal+Canin+Kitten+Food&tag=petspawstore-21"
-    benefits: ["Breed-specific nutrition", "Immune system boost", "Optimal development"]
+    buyLink: "https://www.amazon.in/s?k=Royal+Canin+Kitten+Food&tag=petspawstore-21",\n    benefits: ["Breed-specific nutrition", "Immune system boost", "Optimal development"]
   }
 ]
 
@@ -268,8 +267,7 @@ export const catLitterBoxes = [
     name: "PetSafe ScoopFree Litter Box",
     price: "₹999",
     image: "/images/products/litter.jpg",
-    buyLink: "https://www.amazon.in/s?k=PetSafe+ScoopFree+Litter+Box&tag=petspawstore-21"
-    benefits: ["Self-cleaning", "Reduces mess", "Crystal litter system"]
+    buyLink: "https://www.amazon.in/s?k=PetSafe+ScoopFree+Litter+Box&tag=petspawstore-21",\n    benefits: ["Self-cleaning", "Reduces mess", "Crystal litter system"]
   }
 ]
 
@@ -287,8 +285,7 @@ export const catToys = [
     name: "Yeowww! Laser Pointer",
     price: "₹499",
     image: "/images/products/Yeowww! Laser Pointer.jpg",
-    buyLink: "https://www.amazon.in/s?k=Yeowww!+Laser+Pointer&tag=petspawstore-21"
-    benefits: ["Battery-powered", "Red laser", "Fun for cats"]
+    buyLink: "https://www.amazon.in/s?k=Yeowww!+Laser+Pointer&tag=petspawstore-21",\n    benefits: ["Battery-powered", "Red laser", "Fun for cats"]
   }
 ]
 
@@ -298,16 +295,14 @@ export const catGrooming = [
     name: "AmazonBasics Cat Brush",
     price: "₹299",
     image: "/images/products/grooming.jpg",
-    buyLink: "https://www.amazon.in/s?k=AmazonBasics+Cat+Brush&tag=petspawstore-21"
-    benefits: ["Removes loose fur", "Gentle bristles", "Reduces shedding"]
+    buyLink: "https://www.amazon.in/s?k=AmazonBasics+Cat+Brush&tag=petspawstore-21",\n    benefits: ["Removes loose fur", "Gentle bristles", "Reduces shedding"]
   },
   {
     id: 2,
     name: "Himalaya Cat Shampoo",
     price: "₹599",
     image: "/images/products/grooming.jpg",
-    buyLink: "https://www.amazon.in/s?k=Himalaya+Cat+Shampoo&tag=petspawstore-21"
-    benefits: ["Natural ingredients", "Moisturizes skin", "Pleasant scent"]
+    buyLink: "https://www.amazon.in/s?k=Himalaya+Cat+Shampoo&tag=petspawstore-21",\n    benefits: ["Natural ingredients", "Moisturizes skin", "Pleasant scent"]
   }
 ]
 
