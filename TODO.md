@@ -1,10 +1,12 @@
-# Product Data Fixes Progress
+# Product Fixes TODO
 
-## Steps:
-- [x] Step 1: Update prices in src/data/products.base.js to realistic ₹ values
-- [x] Step 2: Fix affiliate buyLink placeholders to "#" with TODO comments
-- [x] Step 3: Git commit changes
-- [x] Step 4: Git push
+- [ ] Create TODO.md
+- [ ] Fix all placeholder buyLinks in all arrays
+- [ ] Standardize cat/kitten images to /images/products/cat-food.jpg
+- [ ] Standardize dog/puppy images to /images/products/dog-food.jpg
+- [ ] Fix all prices to ₹599/₹999/₹1499 mappings
+- [ ] Clean syntax (commas, \n)
+- [ ] Validate JS with node require
+- [ ] git add/commit/push if valid
 
-All product data fixes completed. Check src/data/products.base.js and git log.
 
