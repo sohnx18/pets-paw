@@ -240,9 +240,10 @@ export const catFoodKitten = [
     name: "Whiskas Kitten Food",
     price: "₹799",
     image: "/images/products/cat-food.jpg",
-    buyLink: "https://www.amazon.in/s?k=Whiskas+Kitten+Food&tag=petspawstore-21"
+    buyLink: "https://www.amazon.in/s?k=Whiskas+Kitten+Food&tag=petspawstore-21",
     benefits: ["Growth support", "Calcium for bones", "Gentle digestion"]
   },
+
   {
     id: 2,
     name: "Royal Canin Kitten Food",
