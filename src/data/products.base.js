@@ -94,7 +94,7 @@ export const dogFoodAdult = [
     id: 2,
     name: "Drools Adult Dry Dog Food",
     price: "₹999",
-    image: "/images/products/drools-adult.jpg",
+    image: "/images/products/dog-food.jpg",
     buyLink: "https://www.amazon.in/s?k=Drools+Adult+Dry+Dog+Food&tag=petspawstore-21",
     benefits: ["Rich in proteins", "Supports joint health", "Vet-approved"]
   }
@@ -181,7 +181,7 @@ export const dogLeashesCollars = [
     id: 1,
     name: "AmazonBasics Dog Collar",
     price: "₹599",
-    image: "/images/products/cleaning.jpg",
+    image: "/images/products/amazonbasics-dog-collar.webp",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Dog+Collar&tag=petspawstore-21",
     benefits: ["Adjustable fit", "Durable nylon", "Comfortable design"]
   },
@@ -189,7 +189,7 @@ export const dogLeashesCollars = [
     id: 2,
     name: "PetSafe Easy Walk Harness",
     price: "₹1499",
-    image: "/images/products/cleaning.jpg",
+    image: "/images/products/amazonbasics-dog-collar.webp",
     buyLink: "https://www.amazon.in/s?k=PetSafe+Easy+Walk+Harness&tag=petspawstore-21",
     benefits: ["Reduces pulling", "No-choke design", "Easy to put on"]
   }
