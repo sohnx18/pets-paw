@@ -31,6 +31,62 @@ function BestDogFood() {
     }
   }
 
+  const containerStyle = {
+    padding: "80px 40px",
+    maxWidth: "1400px", 
+    margin: "0 auto",
+    background: 'var(--bg)',
+  }
+
+  const h1Style = {
+    fontSize: "44px",
+    fontWeight: "900",
+    background: 'linear-gradient(135deg, var(--primary), var(--accent))',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
+    marginBottom: "24px",
+    lineHeight: '1.1'
+  }
+
+  const introStyle = {
+    fontSize: "20px", 
+    color: "var(--text-muted)", 
+    marginBottom: "60px",
+    maxWidth: '800px',
+    lineHeight: '1.7'
+  }
+
+  const sectionStyle = {
+    marginBottom: "80px",
+    padding: '40px 0'
+  }
+
+  const h2Style = {
+    fontSize: "32px", 
+    fontWeight: "800", 
+    color: "var(--text)",
+    marginBottom: "32px",
+    paddingBottom: '12px',
+    borderBottom: '2px solid var(--primary-light)'
+  }
+
+  const gridStyle = {
+    display: "grid", 
+    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+    gap: "32px"
+  }
+
+  const disclaimerStyle = {
+    marginTop: "60px", 
+    fontSize: "14px", 
+    color: "var(--text-muted)", 
+    textAlign: 'center',
+    padding: '20px',
+    background: 'var(--primary-light)',
+    borderRadius: 'var(--radius)'
+  }
+
   return (
     <>
       <SEOHead
@@ -40,16 +96,16 @@ function BestDogFood() {
         canonical="https://pets-paw-store.vercel.app/best-dog-food"
         schema={schema}
       />
-      <div style={{ padding: "60px", maxWidth: "1200px", margin: "0 auto", fontFamily: "sans-serif" }}>
-        <h1 style={{ fontSize: "36px", fontWeight: "700", color: "#1f2937", marginBottom: "20px" }}>🐶 Best Dog Food in India (2026)</h1>
-        <p style={{ fontSize: "18px", color: "#6b7280", marginBottom: "40px" }}>
-          Our top recommendations based on nutrition, price, and user reviews.
+      <div style={containerStyle}>
+        <h1 style={h1Style}>🐶 Best Dog Food in India (2026)</h1>
+        <p style={introStyle}>
+          Our top recommendations based on nutrition, price, and user reviews from thousands of pet parents.
         </p>
 
         {/* Comparison Sections */}
-        <section style={{ marginBottom: "60px" }}>
-          <h2 style={{ fontSize: "28px", fontWeight: "600", color: "#374151", marginBottom: "20px" }}>🏆 Best Overall</h2>
-          <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
+        <section style={sectionStyle}>
+          <h2 style={h2Style}>🏆 Best Overall</h2>
+          <div style={gridStyle}>
             <ProductCard
               name={products[1].name}
               price={products[1].price}
@@ -60,9 +116,9 @@ function BestDogFood() {
           </div>
         </section>
 
-        <section style={{ marginBottom: "60px" }}>
-          <h2 style={{ fontSize: "28px", fontWeight: "600", color: "#374151", marginBottom: "20px" }}>💰 Best Value</h2>
-          <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
+        <section style={sectionStyle}>
+          <h2 style={h2Style}>💰 Best Value</h2>
+          <div style={gridStyle}>
             <ProductCard
               name={products[0].name}
               price={products[0].price}
@@ -73,9 +129,9 @@ function BestDogFood() {
           </div>
         </section>
 
-        <section style={{ marginBottom: "60px" }}>
-          <h2 style={{ fontSize: "28px", fontWeight: "600", color: "#374151", marginBottom: "20px" }}>⭐ Premium Pick</h2>
-          <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
+        <section style={sectionStyle}>
+          <h2 style={h2Style}>⭐ Premium Pick</h2>
+          <div style={gridStyle}>
             <ProductCard
               name={products[2].name}
               price={products[2].price}
@@ -86,9 +142,9 @@ function BestDogFood() {
           </div>
         </section>
 
-        <section>
-          <h2 style={{ fontSize: "28px", fontWeight: "600", color: "#374151", marginBottom: "20px" }}>All Recommendations</h2>
-          <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
+        <section style={sectionStyle}>
+          <h2 style={h2Style}>All Recommendations</h2>
+          <div style={gridStyle}>
             {products.map((p) => (
               <ProductCard
                 key={p.id}
@@ -102,8 +158,8 @@ function BestDogFood() {
           </div>
         </section>
 
-        <p style={{ marginTop: "50px", fontSize: "14px", color: "#777" }}>
-          Pets Paw is supported by readers. As an Amazon Associate we earn from qualifying purchases.
+        <p style={disclaimerStyle}>
+          Pets Paw is supported by readers. As an Amazon Associate we earn from qualifying purchases. All opinions are our own.
         </p>
       </div>
     </>

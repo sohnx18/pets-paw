@@ -1,147 +1,60 @@
-import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import LazyImage from './LazyImage'
+import { Link } from "react-router-dom";
 
-const Card = styled(motion.div)`
-  width: 260px;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  padding: 16px;
-  background: #fff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-`
-
-const ProductImage = styled(LazyImage)`
-  width: 100%;
-  height: 200px;
-  object-fit: contain;
-  min-height: 120px;
-  background: #fff;
-`
-
-const ProductTitle = styled.h3`
-  margin-top: 12px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #1f2937;
-`
-
-const ProductBenefits = styled.ul`
-  margin-top: 8px;
-  padding-left: 16px;
-  font-size: 14px;
-  color: #6b7280;
-  line-height: 1.4;
-`
-
-const ProductPrice = styled.p`
-  font-weight: 600;
-  margin-top: 8px;
-  color: #374151;
-`
-
-const BuyButton = styled.a`
-  display: block;
-  margin-top: 12px;
-  text-align: center;
-  padding: 10px;
-  background: #ff9900;
-  color: #000;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-
-  &:hover {
-    background: #e68a00;
-  }
-`
-
-const AffiliateDisclosure = styled.small`
-  display: block;
-  margin-top: 8px;
-  font-size: 11px;
-  color: #666;
-  text-align: center;
-  line-height: 1.3;
-`
+const cardStyle = {
+  width: '260px',
+  border: '1px solid var(--primary-light)',
+  borderRadius: 'var(--radius)',
+  padding: '16px',
+  background: 'var(--white)',
+  boxShadow: 'var(--shadow)',
+  cursor: 'pointer',
+  transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+}
 
 function ProductCard({ name, price, image, buyLink, benefits = [] }) {
-  // Function to categorize price into labels
-  const getPriceLabel = (priceStr) => {
-    const num = parseFloat(priceStr.replace(/[^\d.]/g, ''));
-    if (num < 1000) return "Budget";
-    if (num <= 2500) return "Mid-range";
-    return "Premium";
-  };
-
-  const priceLabel = getPriceLabel(price);
-
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": name,
-    "image": image,
-    "offers": {
-      "@type": "Offer",
-      "availability": "https://schema.org/InStock",
-      "url": buyLink,
-      "seller": {
-        "@type": "Organization",
-        "name": "Amazon"
-      }
-    }
-  }
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
-  }
-
   return (
-    <Card
-      variants={cardVariants}
-      initial="hidden"
-      animate="visible"
+    <motion.div
+      style={cardStyle}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
+      whileHover={{ translateY: -4, boxShadow: '0 8px 30px rgba(124,92,191,0.2)' }}
     >
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-
-      <ProductImage
-        src={image}
-        alt={name}
-        width={400}
-        height={200}
-      />
-
-      <ProductTitle>{name}</ProductTitle>
-
+      <div style={{ background: 'var(--bg)', borderRadius: '12px', padding: '12px', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '180px', marginBottom: '12px' }}>
+        <LazyImage
+          src={image}
+          alt={name}
+          width={400}
+          height={180}
+          style={{ maxHeight: '160px', maxWidth: '100%', objectFit: 'contain' }}
+        />
+      </div>
+      <div style={{ display: 'inline-block', background: 'var(--primary-light)', color: 'var(--primary)', fontSize: '10px', fontWeight: '700', padding: '3px 10px', borderRadius: '10px', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+        Pet Product
+      </div>
+      <h3 style={{ fontSize: '14px', fontWeight: '700', color: 'var(--text)', marginBottom: '8px', lineHeight: '1.4' }}>{name}</h3>
       {benefits.length > 0 && (
-        <ProductBenefits>
-          {benefits.map((benefit, index) => (
+        <ul style={{ paddingLeft: '16px', fontSize: '13px', color: 'var(--text-muted)', lineHeight: '1.6', marginBottom: '10px' }}>
+          {benefits.slice(0, 3).map((benefit, index) => (
             <li key={index}>{benefit}</li>
           ))}
-        </ProductBenefits>
+        </ul>
       )}
-
-      <ProductPrice>{priceLabel}</ProductPrice>
-
-      <BuyButton
+      <p style={{ fontWeight: '700', fontSize: '13px', color: 'var(--primary)', marginBottom: '12px' }}>{price}</p>
+      
+      <a
         href={buyLink}
         target="_blank"
         rel="noopener noreferrer"
+        style={{ display: 'block', textAlign: 'center', padding: '10px', background: 'linear-gradient(135deg, var(--primary), #9B7FD4)', color: '#fff', borderRadius: '12px', fontWeight: '700', fontSize: '13px', transition: 'opacity 0.2s', textDecoration: 'none' }}
+        onMouseEnter={e => e.target.style.opacity = '0.9'}
+        onMouseLeave={e => e.target.style.opacity = '1'}
       >
-        Check on Amazon
-      </BuyButton>
-    </Card>
+        Check on Amazon →
+      </a>
+    </motion.div>
   )
 }
 

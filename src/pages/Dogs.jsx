@@ -1,6 +1,68 @@
 import ProductCard from "../components/ProductCard";
 import { dogFoodAdult, dogFoodPuppy, dogTreatsSupplements, dogGrooming, dogToys, dogLeashesCollars, dogBedsCrates } from "../data/products";
 
+const containerStyle = {
+  padding: "80px 40px",
+  maxWidth: "1400px",
+  margin: "0 auto",
+  background: 'var(--bg)',
+}
+
+const h1Style = {
+  fontSize: "44px",
+  fontWeight: "900",
+  background: 'linear-gradient(135deg, var(--primary), var(--accent))',
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent',
+  backgroundClip: 'text',
+  marginBottom: "24px",
+  lineHeight: '1.1'
+}
+
+const introStyle = {
+  fontSize: "20px", 
+  color: "var(--text-muted)", 
+  marginBottom: "60px",
+  maxWidth: '800px',
+  lineHeight: '1.7'
+}
+
+const sectionStyle = {
+  marginBottom: "80px",
+  padding: '40px 0',
+  borderBottom: '1px solid var(--primary-light)'
+}
+
+const headerStyle = {
+  display: "flex", 
+  justifyContent: "space-between", 
+  alignItems: "center", 
+  marginBottom: "32px"
+}
+
+const h2Style = {
+  fontSize: "28px", 
+  fontWeight: "800", 
+  color: "var(--text)"
+}
+
+const linkStyle = {
+  color: "var(--primary)",
+  textDecoration: "none", 
+  fontWeight: "600",
+  fontSize: '16px',
+  padding: '10px 20px',
+  background: 'var(--primary-light)',
+  borderRadius: '12px',
+  transition: 'all 0.2s'
+}
+
+const gridStyle = {
+  display: "grid", 
+  gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+  gap: "32px"
+}
+
 function Dogs() {
   const categories = [
     { title: "Adult Dog Food", products: dogFoodAdult, link: "/best-dog-food" },
@@ -13,25 +75,25 @@ function Dogs() {
   ];
 
   return (
-    <div style={{ padding: "60px", maxWidth: "1200px", margin: "0 auto", fontFamily: "sans-serif" }}>
-      <h1 style={{ fontSize: "36px", fontWeight: "700", color: "#1f2937", marginBottom: "20px" }}>🐶 Everything for Dogs</h1>
-      <p style={{ fontSize: "18px", color: "#6b7280", marginBottom: "40px" }}>
+    <div style={containerStyle}>
+      <h1 style={h1Style}>🐶 Everything for Dogs</h1>
+      <p style={introStyle}>
         Find the best food, toys, grooming supplies, and more for your canine companion.
       </p>
 
       {categories.map((category, index) => (
-        <section key={index} style={{ marginBottom: "60px" }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
-            <h2 style={{ fontSize: "24px", fontWeight: "600", color: "#374151" }}>{category.title}</h2>
+        <section key={index} style={sectionStyle}>
+          <div style={headerStyle}>
+            <h2 style={h2Style}>{category.title}</h2>
             {category.link && (
-              <a href={category.link} style={{ color: "#22c55e", textDecoration: "none", fontWeight: "500" }}>
+              <a href={category.link} style={linkStyle}>
                 View All →
               </a>
             )}
           </div>
 
-          <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
-            {category.products.map((product) => (
+          <div style={gridStyle}>
+            {category.products.slice(0, 4).map((product) => (
               <ProductCard
                 key={product.id}
                 image={product.image}
