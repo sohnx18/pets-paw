@@ -2,7 +2,7 @@
 export const bestCatFoods = [
   {
     id: 1,
-    name: "Whiskas Adult Dry Cat Food â€“ Ocean Fish (3kg)",
+    name: "Whiskas Adult Dry Cat Food - Ocean Fish (3kg)",
     price: "Check Price on Amazon",
     image: "/images/products/whiskas.jpg",
     buyLink: "https://www.amazon.in/s?k=Whiskas+Adult+Dry+Cat+Food+Ocean+Fish+3kg&tag=petspawstore-21",
@@ -31,7 +31,7 @@ export const bestDogFoods = [
     id: 1,
     name: "Pedigree Adult Dry Dog Food (3kg)",
     price: "Check Price on Amazon",
-    image: "/images/products/drools-adult-dry-dog-food-3kg.jpg",
+    image: "/images/products/Pedigree Puppy Chicken & Milk 3kg.jpg",
     buyLink: "https://www.amazon.in/s?k=Pedigree+Adult+Dry+Dog+Food+3kg&tag=petspawstore-21",
     benefits: ["Complete nutrition", "Easy to digest", "Affordable quality"]
   },
@@ -86,7 +86,7 @@ export const dogFoodAdult = [
     id: 1,
     name: "Pedigree Adult Dry Dog Food (3kg)",
     price: "Check Price on Amazon",
-    image: "/images/products/drools-adult-dry-dog-food-3kg.jpg",
+    image: "/images/products/Pedigree Puppy Chicken & Milk 3kg.jpg",
     buyLink: "https://www.amazon.in/s?k=Pedigree+Adult+Dry+Dog+Food+3kg&tag=petspawstore-21",
     benefits: ["Complete nutrition", "Easy to digest", "Affordable quality"]
   },
@@ -218,7 +218,7 @@ export const dogBedsCrates = [
 export const catFoodAdult = [
   {
     id: 1,
-    name: "Whiskas Adult Dry Cat Food â€“ Ocean Fish (3kg)",
+    name: "Whiskas Adult Dry Cat Food - Ocean Fish (3kg)",
     price: "Check Price on Amazon",
     image: "/images/products/whiskas.jpg",
     buyLink: "https://www.amazon.in/s?k=Whiskas+Adult+Dry+Cat+Food+Ocean+Fish+3kg&tag=petspawstore-21",
