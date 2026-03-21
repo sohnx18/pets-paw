@@ -1,5 +1,5 @@
-import ProductCard from "../components/ProductCard";
-import { catFoodAdult, catFoodKitten, catGrooming, catToys, catTreesScratching, catLitter } from "../data/products";
+﻿import ProductCard from "../components/ProductCard";
+import { catFoodAdult, catFoodKitten, catGrooming, catToys, catScratchers, catLitterBoxes } from "../data/products";
 
 const containerStyle = {
   padding: "80px 40px",
@@ -64,7 +64,7 @@ function Cats() {
 
   return (
     <div style={containerStyle}>
-      <h1 style={h1Style}>🐱 Everything for Cats</h1>
+      <h1 style={h1Style}>ðŸ± Everything for Cats</h1>
       <p style={introStyle}>
         Premium food, toys, litter solutions and grooming essentials for your feline friends.
       </p>
