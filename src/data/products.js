@@ -20,3 +20,4 @@ export let dogBedsCrates = baseExports.dogBedsCrates
 
 
 export { catFoodAdult, catFoodKitten, catGrooming, catToys, catLitter, catScratchers } from './products.base.js'
+export { catLitterBoxes, catScratchers } from './products.base.js'
