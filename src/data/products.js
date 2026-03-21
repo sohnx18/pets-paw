@@ -1,23 +1,23 @@
-﻿// This file chooses a generated cached products file (if available) to avoid broken Amazon hotlinks.
-// It falls back to the bundled base file.
+﻿import * as baseExports from './products.base.js'
 
-import * as baseExports from './products.base.js'
-
-export let bestCatFoods = baseExports.bestCatFoods
-export let bestDogFoods = baseExports.bestDogFoods
-export let bestPuppyFoods = baseExports.bestPuppyFoods
-export let dogs = baseExports.dogs
-export let cats = baseExports.cats
-export let dogFoodAdult = baseExports.dogFoodAdult
-export let dogFoodPuppy = baseExports.dogFoodPuppy
-export let dogTreatsSupplements = baseExports.dogTreatsSupplements
-export let dogGrooming = baseExports.dogGrooming
-export let dogToys = baseExports.dogToys
-export let dogLeashesCollars = baseExports.dogLeashesCollars
-export let dogBedsCrates = baseExports.dogBedsCrates
-
-
-
-
-export { catFoodAdult, catFoodKitten, catGrooming, catToys, catLitter, catScratchers } from './products.base.js'
-export { catLitterBoxes, catScratchers } from './products.base.js'
+export const bestCatFoods = baseExports.bestCatFoods
+export const bestDogFoods = baseExports.bestDogFoods
+export const bestPuppyFoods = baseExports.bestPuppyFoods
+export const dogs = baseExports.dogs
+export const cats = baseExports.cats
+export const dogFoodAdult = baseExports.dogFoodAdult
+export const dogFoodPuppy = baseExports.dogFoodPuppy
+export const dogTreatsSupplements = baseExports.dogTreatsSupplements
+export const dogGrooming = baseExports.dogGrooming
+export const dogToys = baseExports.dogToys
+export const dogLeashesCollars = baseExports.dogLeashesCollars
+export const dogBedsCrates = baseExports.dogBedsCrates
+export const catFoodAdult = baseExports.catFoodAdult
+export const catFoodKitten = baseExports.catFoodKitten
+export const catGrooming = baseExports.catGrooming
+export const catToys = baseExports.catToys
+export const catScratchers = baseExports.catScratchers
+export const catLitterBoxes = baseExports.catLitterBoxes
+export const healthSupplements = baseExports.healthSupplements
+export const accessories = baseExports.accessories
+export const cleaningHygiene = baseExports.cleaningHygiene
