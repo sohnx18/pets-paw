@@ -58,8 +58,8 @@ function Cats() {
     { title: "Kitten Food", products: catFoodKitten },
     { title: "Grooming", products: catGrooming },
     { title: "Toys", products: catToys },
-    { title: "Trees & Scratching Posts", products: catTreesScratching },
-    { title: "Litter & Accessories", products: catLitter }
+    { title: "Trees & Scratching Posts", products: catScratchers },
+    { title: "Litter & Accessories", products: catLitterBoxes }
   ];
 
   return (
@@ -94,3 +94,4 @@ function Cats() {
 }
 
 export default Cats;
+
