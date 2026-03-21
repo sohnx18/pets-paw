@@ -1,4 +1,4 @@
-// This file chooses a generated cached products file (if available) to avoid broken Amazon hotlinks.
+﻿// This file chooses a generated cached products file (if available) to avoid broken Amazon hotlinks.
 // It falls back to the bundled base file.
 
 import * as baseExports from './products.base.js'
@@ -18,3 +18,5 @@ export let dogBedsCrates = baseExports.dogBedsCrates
 
 
 
+
+export { catFoodAdult, catFoodKitten, catGrooming, catToys, catLitter, catScratchers } from './products.base.js'
