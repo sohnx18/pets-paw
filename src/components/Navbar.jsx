@@ -43,16 +43,16 @@ function Navbar() {
     <nav style={navStyle}>
       {/* Logo / Site Title */}
       <Link to="/" style={logoStyle}>
-        Pets Paw ðŸ¾
+        Pets Paw 🐾
       </Link>
 
       {/* Menu */}
       <div style={menuStyle}>
         <Link to="/dogs" style={linkStyle}>
-          ðŸ¶ Dogs
+          🐶 Dogs
         </Link>
         <Link to="/cats" style={linkStyle}>
-          ðŸ± Cats
+          🐱 Cats
         </Link>
         <Link to="/best-dog-food" style={linkStyle}>
           🥩 Best Dog Food

@@ -1,9 +1,9 @@
-# Task: Fix src/data/products.base.js and push
+# Fix Emoji Encoding Task
 
 ## Steps:
-- [x] 1. Edit Pedigree Adult product images (bestDogFoods & dogFoodAdult)
-- [x] 2. Fix broken Whiskas product names (bestCatFoods & catFoodAdult)
-- [x] 3. Validate JavaScript syntax
-- [x] 4. Git add, commit, push
-
-**Task completed!**
+- [x] 1. Edit src/components/Navbar.jsx - replace 3 broken emojis
+- [x] 2. Edit src/components/Hero.jsx - replace 5 broken emojis  
+- [ ] 3. git add .
+- [ ] 4. git commit -m "Fix emoji encoding in Navbar and Hero"
+- [ ] 5. git push
+- [ ] 6. Verify in browser/editor

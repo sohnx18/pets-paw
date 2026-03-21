@@ -87,7 +87,7 @@ export default function Hero() {
   return (
     <section style={sectionStyle}>
       <h1 style={h1Style}>
-        Pets Paw ðŸ¾
+        Pets Paw 🐾
       </h1>
 
       <h2 style={h2Style}>
@@ -96,18 +96,18 @@ export default function Hero() {
 
       <p style={pStyle}>
         Safe, reviewed products for dogs and cats. Trusted recommendations from pet experts.
-        Find food, toys, grooming supplies, and more â€“ all affiliate-compliant and vetted for quality.
+        Find food, toys, grooming supplies, and more — all affiliate-compliant and vetted for quality.
       </p>
 
       <div style={tagsStyle}>
-        <span>âœ“ Expert-reviewed</span>
-        <span>âœ“ Affiliate-disclosure</span>
-        <span>âœ“ No sponsored content</span>
+        <span>✓ Expert-reviewed</span>
+        <span>✓ Affiliate-disclosure</span>
+        <span>✓ No sponsored content</span>
       </div>
 
       <div style={buttonsStyle}>
-        <Link to="/dogs" style={btnStyle}>ðŸ¶ Shop for Dogs</Link>
-        <Link to="/cats" style={btnStyle}>ðŸ± Shop for Cats</Link>
+        <Link to="/dogs" style={btnStyle}>🐶 Shop for Dogs</Link>
+        <Link to="/cats" style={btnStyle}>🐱 Shop for Cats</Link>
         <Link to="/best-dog-food" style={btnStyle}>🥩 Best Dog Food</Link>
       </div>
 
