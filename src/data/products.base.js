@@ -4,7 +4,7 @@ export const bestCatFoods = [
     id: 1,
     name: "Whiskas Adult Dry Cat Food - Ocean Fish (3kg)",
     price: "Check Price on Amazon",
-    image: "/images/products/whiskas.jpg",
+    image: "https://m.media-amazon.com/images/I/71J5oHYKhxL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Whiskas+Adult+Dry+Cat+Food+Ocean+Fish+3kg&tag=petspawstore-21",
     benefits: ["Balanced nutrition", "Tasty ocean fish flavor", "Supports healthy digestion"]
   },
@@ -12,7 +12,7 @@ export const bestCatFoods = [
     id: 2,
     name: "Drools Adult Dry Cat Food",
     price: "Check Price on Amazon",
-    image: "/images/products/drools-adult-dry-cat-food.jpg",
+    image: "https://m.media-amazon.com/images/I/71bRAHPkwHL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Drools+Adult+Dry+Cat+Food&tag=petspawstore-21",
     benefits: ["High-quality proteins", "Vet-recommended formula", "Boosts immunity"]
   },
@@ -20,7 +20,7 @@ export const bestCatFoods = [
     id: 3,
     name: "Me-O Adult Dry Cat Food",
     price: "Check Price on Amazon",
-    image: "/images/products/Me-O Adult Dry Cat Food.jpg",
+    image: "https://m.media-amazon.com/images/I/712RcVbHpYL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Me-O+Adult+Dry+Cat+Food&tag=petspawstore-21",
     benefits: ["Premium ingredients", "Long-lasting freshness", "Ideal for all breeds"]
   }
@@ -31,7 +31,7 @@ export const bestDogFoods = [
     id: 1,
     name: "Pedigree Adult Dry Dog Food (3kg)",
     price: "Check Price on Amazon",
-    image: "/images/products/Pedigree Puppy Chicken & Milk 3kg.jpg",
+    image: "https://m.media-amazon.com/images/I/71UxuHvRDQL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Pedigree+Adult+Dry+Dog+Food+3kg&tag=petspawstore-21",
     benefits: ["Complete nutrition", "Easy to digest", "Affordable quality"]
   },
@@ -39,7 +39,7 @@ export const bestDogFoods = [
     id: 2,
     name: "Drools Adult Dry Dog Food",
     price: "Check Price on Amazon",
-    image: "/images/products/drools-adult-dry-dog-food-3kg.jpg",
+    image: "https://m.media-amazon.com/images/I/71BuWvdXBJL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Drools+Adult+Dry+Dog+Food&tag=petspawstore-21",
     benefits: ["Rich in proteins", "Supports joint health", "Vet-approved"]
   },
@@ -47,7 +47,7 @@ export const bestDogFoods = [
     id: 3,
     name: "Royal Canin Puppy Medium 4kg",
     price: "Check Price on Amazon",
-    image: "/images/products/Royal Canin Puppy Medium 4kg.webp",
+    image: "https://m.media-amazon.com/images/I/71lXKg9DmSL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Royal+Canin+Puppy+Medium+4kg&tag=petspawstore-21",
     benefits: ["Breed-specific formula", "Promotes healthy growth", "High digestibility"]
   }
@@ -58,7 +58,7 @@ export const bestPuppyFoods = [
     id: 1,
     name: "Pedigree Puppy Chicken & Milk 3kg",
     price: "Check Price on Amazon",
-    image: "/images/products/Pedigree Puppy Chicken & Milk 3kg.jpg",
+    image: "https://m.media-amazon.com/images/I/71pTjrknJaL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Pedigree+Puppy+Chicken+Milk+3kg&tag=petspawstore-21",
     benefits: ["Puppy-specific nutrition", "Calcium for bones", "Gentle on stomach"]
   },
@@ -66,7 +66,7 @@ export const bestPuppyFoods = [
     id: 2,
     name: "Drools Puppy Dry Dog Food 3kg",
     price: "Check Price on Amazon",
-    image: "/images/products/Pedigree Puppy Chicken & Milk 3kg.jpg",
+    image: "https://m.media-amazon.com/images/I/71BuWvdXBJL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Drools+Puppy+Dry+Dog+Food+3kg&tag=petspawstore-21",
     benefits: ["Supports development", "Omega fatty acids", "Boosts immunity"]
   },
@@ -74,7 +74,7 @@ export const bestPuppyFoods = [
     id: 3,
     name: "Royal Canin Puppy Medium 4kg",
     price: "Check Price on Amazon",
-    image: "/images/products/Royal Canin Puppy Medium 4kg.webp",
+    image: "https://m.media-amazon.com/images/I/71lXKg9DmSL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Royal+Canin+Puppy+Medium+4kg&tag=petspawstore-21",
     benefits: ["Tailored for medium breeds", "Optimal growth formula", "Vet-recommended"]
   }
@@ -86,7 +86,7 @@ export const dogFoodAdult = [
     id: 1,
     name: "Pedigree Adult Dry Dog Food (3kg)",
     price: "Check Price on Amazon",
-    image: "/images/products/Pedigree Puppy Chicken & Milk 3kg.jpg",
+    image: "https://m.media-amazon.com/images/I/71UxuHvRDQL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Pedigree+Adult+Dry+Dog+Food+3kg&tag=petspawstore-21",
     benefits: ["Complete nutrition", "Easy to digest", "Affordable quality"]
   },
@@ -94,7 +94,7 @@ export const dogFoodAdult = [
     id: 2,
     name: "Drools Adult Dry Dog Food",
     price: "Check Price on Amazon",
-    image: "/images/products/drools-adult-dry-dog-food-3kg.jpg",
+    image: "https://m.media-amazon.com/images/I/71BuWvdXBJL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Drools+Adult+Dry+Dog+Food&tag=petspawstore-21",
     benefits: ["Rich in proteins", "Supports joint health", "Vet-approved"]
   }
@@ -105,7 +105,7 @@ export const dogFoodPuppy = [
     id: 1,
     name: "Pedigree Puppy Chicken & Milk 3kg",
     price: "Check Price on Amazon",
-    image: "/images/products/Pedigree Puppy Chicken & Milk 3kg.jpg",
+    image: "https://m.media-amazon.com/images/I/71pTjrknJaL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Pedigree+Puppy+Chicken+Milk+3kg&tag=petspawstore-21",
     benefits: ["Puppy-specific nutrition", "Calcium for bones", "Gentle on stomach"]
   },
@@ -113,7 +113,7 @@ export const dogFoodPuppy = [
     id: 2,
     name: "Royal Canin Puppy Medium 4kg",
     price: "Check Price on Amazon",
-    image: "/images/products/Royal Canin Puppy Medium 4kg.webp",
+    image: "https://m.media-amazon.com/images/I/71lXKg9DmSL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Royal+Canin+Puppy+Medium+4kg&tag=petspawstore-21",
     benefits: ["Tailored for medium breeds", "Optimal growth formula", "Vet-recommended"]
   }
@@ -124,7 +124,7 @@ export const dogTreatsSupplements = [
     id: 1,
     name: "Pedigree Dentastix Treats",
     price: "Check Price on Amazon",
-    image: "/images/products/dentastix treats.jpg",
+    image: "https://m.media-amazon.com/images/I/71wdPMHRw2L._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Pedigree+Dentastix+Treats&tag=petspawstore-21",
     benefits: ["Dental health support", "Long-lasting chew", "Reduces plaque"]
   },
@@ -132,7 +132,7 @@ export const dogTreatsSupplements = [
     id: 2,
     name: "Drools Omega 3 Supplements",
     price: "Check Price on Amazon",
-    image: "/images/products/Drools Omega 3 Supplements.webp",
+    image: "https://m.media-amazon.com/images/I/61FjJp5vHFL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Drools+Omega+3+Supplements&tag=petspawstore-21",
     benefits: ["Skin and coat health", "Joint support", "Natural ingredients"]
   }
@@ -143,7 +143,7 @@ export const dogGrooming = [
     id: 1,
     name: "Himalaya Erina-EP Shampoo",
     price: "Check Price on Amazon",
-    image: "/images/products/grooming.jpg",
+    image: "https://m.media-amazon.com/images/I/51qjOZHPQ8L._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Himalaya+Erina+EP+Shampoo&tag=petspawstore-21",
     benefits: ["Natural ingredients", "Gentle on skin", "Removes dirt effectively"]
   },
@@ -151,7 +151,7 @@ export const dogGrooming = [
     id: 2,
     name: "AmazonBasics Dog Brush",
     price: "Check Price on Amazon",
-    image: "/images/products/grooming.jpg",
+    image: "https://m.media-amazon.com/images/I/71w3AhAqXzL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Dog+Brush&tag=petspawstore-21",
     benefits: ["Removes loose fur", "Massages skin", "Easy to use"]
   }
@@ -162,7 +162,7 @@ export const dogToys = [
     id: 1,
     name: "AmazonBasics Dog Rope Toy",
     price: "Check Price on Amazon",
-    image: "/images/products/toys.jpg",
+    image: "https://m.media-amazon.com/images/I/71V1cHTHuHL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Dog+Rope+Toy&tag=petspawstore-21",
     benefits: ["Durable material", "Promotes exercise", "Fun for playtime"]
   },
@@ -170,7 +170,7 @@ export const dogToys = [
     id: 2,
     name: "Kong Classic Dog Toy",
     price: "Check Price on Amazon",
-    image: "/images/products/Kong Classic Dog Toy.jpg",
+    image: "https://m.media-amazon.com/images/I/71V1cHTHuHL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Kong+Classic+Dog+Toy&tag=petspawstore-21",
     benefits: ["Chew-resistant", "Holds treats", "Reduces boredom"]
   }
@@ -181,7 +181,7 @@ export const dogLeashesCollars = [
     id: 1,
     name: "AmazonBasics Dog Collar",
     price: "Check Price on Amazon",
-    image: "/images/products/collar.jpg",
+    image: "https://m.media-amazon.com/images/I/71kfGlRbN3L._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Dog+Collar&tag=petspawstore-21",
     benefits: ["Adjustable fit", "Durable nylon", "Comfortable design"]
   },
@@ -189,7 +189,7 @@ export const dogLeashesCollars = [
     id: 2,
     name: "PetSafe Easy Walk Harness",
     price: "Check Price on Amazon",
-    image: "/images/products/collar.jpg",
+    image: "https://m.media-amazon.com/images/I/71kfGlRbN3L._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=PetSafe+Easy+Walk+Harness&tag=petspawstore-21",
     benefits: ["Reduces pulling", "No-choke design", "Easy to put on"]
   }
@@ -200,7 +200,7 @@ export const dogBedsCrates = [
     id: 1,
     name: "AmazonBasics Dog Bed",
     price: "Check Price on Amazon",
-    image: "/images/products/beds.jpg",
+    image: "https://m.media-amazon.com/images/I/71bL7wJiPhL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Dog+Bed&tag=petspawstore-21",
     benefits: ["Orthopedic support", "Machine washable", "Comfortable foam"]
   },
@@ -208,7 +208,7 @@ export const dogBedsCrates = [
     id: 2,
     name: "MidWest Folding Dog Crate",
     price: "Check Price on Amazon",
-    image: "/images/products/beds.jpg",
+    image: "https://m.media-amazon.com/images/I/71z3q6+m5SL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=MidWest+Folding+Dog+Crate&tag=petspawstore-21",
     benefits: ["Secure enclosure", "Foldable for storage", "Durable construction"]
   }
@@ -220,7 +220,7 @@ export const catFoodAdult = [
     id: 1,
     name: "Whiskas Adult Dry Cat Food - Ocean Fish (3kg)",
     price: "Check Price on Amazon",
-    image: "/images/products/whiskas.jpg",
+    image: "https://m.media-amazon.com/images/I/71J5oHYKhxL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Whiskas+Adult+Dry+Cat+Food+Ocean+Fish+3kg&tag=petspawstore-21",
     benefits: ["Balanced nutrition", "Tasty ocean fish flavor", "Supports healthy digestion"]
   },
@@ -228,7 +228,7 @@ export const catFoodAdult = [
     id: 2,
     name: "Drools Adult Dry Cat Food",
     price: "Check Price on Amazon",
-    image: "/images/products/drools-adult-dry-cat-food.jpg",
+    image: "https://m.media-amazon.com/images/I/71bRAHPkwHL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Drools+Adult+Dry+Cat+Food&tag=petspawstore-21",
     benefits: ["High-quality proteins", "Vet-recommended formula", "Boosts immunity"]
   }
@@ -239,7 +239,7 @@ export const catFoodKitten = [
     id: 1,
     name: "Whiskas Kitten Food",
     price: "Check Price on Amazon",
-    image: "/images/products/whiskas.jpg",
+    image: "https://m.media-amazon.com/images/I/71J5oHYKhxL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Whiskas+Kitten+Food&tag=petspawstore-21",
     benefits: ["Growth support", "Calcium for bones", "Gentle digestion"]
   },
@@ -247,7 +247,7 @@ export const catFoodKitten = [
     id: 2,
     name: "Royal Canin Kitten Food",
     price: "Check Price on Amazon",
-    image: "/images/products/Royal Canin Puppy Medium 4kg.webp",
+    image: "https://m.media-amazon.com/images/I/71lXKg9DmSL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Royal+Canin+Kitten+Food&tag=petspawstore-21",
     benefits: ["Breed-specific nutrition", "Immune system boost", "Optimal development"]
   }
@@ -258,7 +258,7 @@ export const catLitterBoxes = [
     id: 1,
     name: "AmazonBasics Cat Litter Box",
     price: "Check Price on Amazon",
-    image: "/images/products/cleaning.jpg",
+    image: "https://m.media-amazon.com/images/I/71bL7wJiPhL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Cat+Litter+Box&tag=petspawstore-21",
     benefits: ["Easy to clean", "Odor control", "Compact design"]
   },
@@ -266,7 +266,7 @@ export const catLitterBoxes = [
     id: 2,
     name: "PetSafe ScoopFree Litter Box",
     price: "Check Price on Amazon",
-    image: "/images/products/cleaning.jpg",
+    image: "https://m.media-amazon.com/images/I/71bL7wJiPhL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=PetSafe+ScoopFree+Litter+Box&tag=petspawstore-21",
     benefits: ["Self-cleaning", "Reduces mess", "Crystal litter system"]
   }
@@ -277,7 +277,7 @@ export const catToys = [
     id: 1,
     name: "AmazonBasics Cat Wand Toy",
     price: "Check Price on Amazon",
-    image: "/images/products/toys.jpg",
+    image: "https://m.media-amazon.com/images/I/71V1cHTHuHL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Cat+Wand+Toy&tag=petspawstore-21",
     benefits: ["Interactive play", "Feather attachment", "Encourages exercise"]
   },
@@ -285,7 +285,7 @@ export const catToys = [
     id: 2,
     name: "Yeowww! Laser Pointer",
     price: "Check Price on Amazon",
-    image: "/images/products/toys.jpg",
+    image: "https://m.media-amazon.com/images/I/71V1cHTHuHL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Yeowww+Laser+Pointer&tag=petspawstore-21",
     benefits: ["Battery-powered", "Red laser", "Fun for cats"]
   }
@@ -296,7 +296,7 @@ export const catGrooming = [
     id: 1,
     name: "AmazonBasics Cat Brush",
     price: "Check Price on Amazon",
-    image: "/images/products/cleaning.jpg",
+    image: "https://m.media-amazon.com/images/I/71w3AhAqXzL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Cat+Brush&tag=petspawstore-21",
     benefits: ["Removes loose fur", "Gentle bristles", "Reduces shedding"]
   },
@@ -304,7 +304,7 @@ export const catGrooming = [
     id: 2,
     name: "Himalaya Cat Shampoo",
     price: "Check Price on Amazon",
-    image: "/images/products/cleaning.jpg",
+    image: "https://m.media-amazon.com/images/I/51qjOZHPQ8L._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Himalaya+Cat+Shampoo&tag=petspawstore-21",
     benefits: ["Natural ingredients", "Moisturizes skin", "Pleasant scent"]
   }
@@ -315,7 +315,7 @@ export const catScratchers = [
     id: 1,
     name: "AmazonBasics Cat Scratcher",
     price: "Check Price on Amazon",
-    image: "/images/products/scratchers.jpg",
+    image: "https://m.media-amazon.com/images/I/71b0NWpXI5L._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Cat+Scratcher&tag=petspawstore-21",
     benefits: ["Cardboard material", "Satisfies scratching instinct", "Durable design"]
   },
@@ -323,7 +323,7 @@ export const catScratchers = [
     id: 2,
     name: "Frisco Sisal Scratcher",
     price: "Check Price on Amazon",
-    image: "/images/products/scratchers.jpg",
+    image: "https://m.media-amazon.com/images/I/71b0NWpXI5L._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Frisco+Sisal+Scratcher&tag=petspawstore-21",
     benefits: ["Sisal rope", "Multiple scratching surfaces", "Attractive design"]
   }
@@ -335,7 +335,7 @@ export const healthSupplements = [
     id: 1,
     name: "Zesty Paws Probiotic Bites",
     price: "Check Price on Amazon",
-    image: "/images/products/supplements.jpg",
+    image: "https://m.media-amazon.com/images/I/71V1cHTHuHL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Zesty+Paws+Probiotic+Bites&tag=petspawstore-21",
     benefits: ["Digestive health", "Immune support", "Natural ingredients"]
   },
@@ -343,7 +343,7 @@ export const healthSupplements = [
     id: 2,
     name: "Nutramax Hip & Joint Chews",
     price: "Check Price on Amazon",
-    image: "/images/products/supplements.jpg",
+    image: "https://m.media-amazon.com/images/I/71V1cHTHuHL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Nutramax+Hip+&+Joint+Chews&tag=petspawstore-21",
     benefits: ["Glucosamine supplement", "Joint mobility", "Vet-formulated"]
   }
@@ -354,7 +354,7 @@ export const accessories = [
     id: 1,
     name: "AmazonBasics Pet Bowl",
     price: "Check Price on Amazon",
-    image: "/images/products/accessories.jpg",
+    image: "https://m.media-amazon.com/images/I/71V1cHTHuHL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Pet+Bowl&tag=petspawstore-21",
     benefits: ["Stainless steel", "Non-slip base", "Easy to clean"]
   },
@@ -362,7 +362,7 @@ export const accessories = [
     id: 2,
     name: "PetSafe ID Tag",
     price: "Check Price on Amazon",
-    image: "/images/products/accessories.jpg",
+    image: "https://m.media-amazon.com/images/I/71V1cHTHuHL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=PetSafe+ID+Tag&tag=petspawstore-21",
     benefits: ["Customizable", "Durable material", "Contact information"]
   }
@@ -373,7 +373,7 @@ export const cleaningHygiene = [
     id: 1,
     name: "AmazonBasics Pet Wipes",
     price: "Check Price on Amazon",
-    image: "/images/products/cleaning.jpg",
+    image: "https://m.media-amazon.com/images/I/71bL7wJiPhL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=AmazonBasics+Pet+Wipes&tag=petspawstore-21",
     benefits: ["Gentle on skin", "Removes dirt", "Alcohol-free"]
   },
@@ -381,7 +381,7 @@ export const cleaningHygiene = [
     id: 2,
     name: "Nature's Miracle Stain Remover",
     price: "Check Price on Amazon",
-    image: "/images/products/cleaning.jpg",
+    image: "https://m.media-amazon.com/images/I/71bL7wJiPhL._SX300_SY300_QL70_FMwebp_.jpg",
     buyLink: "https://www.amazon.in/s?k=Nature's+Miracle+Stain+Remover&tag=petspawstore-21",
     benefits: ["Enzyme formula", "Eliminates odors", "Safe for pets"]
   }

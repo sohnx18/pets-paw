@@ -62,8 +62,7 @@ function Footer() {
         </p>
 
         <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '13px' }}>
-          <strong>Affiliate Disclosure:</strong> We may earn commissions from purchases made through our links at no extra cost to you.
-          All recommendations based on independent research.
+          As an Amazon Associate, I earn from qualifying purchases.
         </p>
       </div>
     </footer>
@@ -71,3 +70,4 @@ function Footer() {
 }
 
 export default Footer
+
