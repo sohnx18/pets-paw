@@ -5,6 +5,7 @@
 - [✅] 2. `index.html`: Title="Pets Paw Store – Best Dog & Cat Food in India", meta description added, 🐾 favicon
 - [✅] 3. `src/components/Footer.jsx`: Exact Amazon Associates disclosure added
 - [x] Switch buyLink from search URLs to direct ASIN URLs
+- [x] Fix Amazon hotlink block — proxy images through wsrv.nl
 
 ## 🧪 Test Commands
 ```bash

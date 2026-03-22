@@ -9,6 +9,10 @@ function LazyImage({ src, alt, width, height, style, ...props }) {
     threshold: 0.1,
   })
 
+  const proxiedSrc = src?.startsWith("https://m.media-amazon.com")
+    ? `https://wsrv.nl/?url=${encodeURIComponent(src)}&w=300&h=300&fit=contain&bg=white`
+    : src;
+
   const handleLoad = () => {
     setIsLoaded(true)
   }
@@ -49,7 +53,7 @@ function LazyImage({ src, alt, width, height, style, ...props }) {
       )}
       {inView && (
         <img
-          src={src}
+          src={proxiedSrc}
           alt={alt}
           width={width}
           height={height}
